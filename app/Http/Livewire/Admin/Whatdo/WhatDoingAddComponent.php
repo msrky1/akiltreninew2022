@@ -20,7 +20,9 @@ class WhatDoingAddComponent extends Component
     public $description;
     public $image;
     public $icon;
+    public $color;
     public $whatdo_id;
+
  
 
     public function generateSlug(){
@@ -41,6 +43,7 @@ class WhatDoingAddComponent extends Component
           $whatdo->slug = $this->slug;
           $whatdo->description = $this->description;
           $whatdo->icon = $this->icon;
+          $whatdo->color = $this->color;
 
           $imageName = Carbon::now()->timestamp. '.' . $this->image->extension();
          $this->image->storeAs('public/whatdoing', $imageName);

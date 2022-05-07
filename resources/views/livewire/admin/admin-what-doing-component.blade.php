@@ -39,6 +39,7 @@
 												<th class="cell">Başlık</th>
 												<th class="cell">İçerik Detay Yazı</th>
 												<th class="cell">İkon</th>
+												<th class="cell">Renk</th>
 												<th class="cell">Aksiyonlar</th>
 											
 											</tr>
@@ -54,6 +55,7 @@
 												<td class="cell"><span class="truncate">{{$s->title}}</span></td>
 												<td class="cell">{!!$s->description = Str::limit($s->description, 50) !!}</td>
 												<td class="cell"><h5> {!! $s->icon !!} </h5></td>
+												<td class="cell"><h5> {!! $s->color !!} </h5></td>
 											
 								
 												<td class="cell"><a class="btn-sm app-btn-secondary" href="{{route('admin.whatdo.edit' , ['whatdo_id' => $s->id])}}">Düzenle

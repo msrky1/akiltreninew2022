@@ -20,6 +20,7 @@ class WhatDoingEditComponent extends Component
     public $description;
     public $image; 
     public $icon; 
+    public $color; 
     public $newimage; 
 
 
@@ -33,6 +34,7 @@ class WhatDoingEditComponent extends Component
        $this->title = $whatdo->title;
        $this->slug = $whatdo->slug;
        $this->icon = $whatdo->icon;
+       $this->color = $whatdo->color;
        $this->description = $whatdo->description;
       
        $this->image = $whatdo->image;
@@ -55,6 +57,7 @@ class WhatDoingEditComponent extends Component
           $whatdo->title = $this->title;
           $whatdo->slug = $this->slug;
           $whatdo->icon = $this->icon;
+          $whatdo->color = $this->color;
           $whatdo->description = $this->description;
           if ($this->newimage){
             $imageName = Carbon::now()->timestamp. '.' . $this->newimage->extension();

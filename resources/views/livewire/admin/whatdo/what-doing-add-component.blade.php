@@ -67,6 +67,24 @@
                                                 <option value="<i class='fa fa-pencil-square-o'></i>">Kalem</option>
                                                 <option value="<i class='fa fa-line-chart'></i>">Çizelge</option>
                                                 <option value="<i class='fa fa-briefcase'></i>">İş Çantası</option>
+                                                <option value="<i class='fas fa-cubes'></i>">Küp</option>
+                                                <option value="<i class='far fa-building'></i>">Yapıcı</option>
+                                                <option value="<i class='fas fa-gamepad'></i>">Oyun Konsolu</option>
+                                                <option value="<i class='fas fa-pen'></i>">Tekli Kalem</option>
+                                              </select>
+                                        </div>  
+                                        <div class="mb-3" wire:ignore>
+                                            <label for="setting-input-2" class="form-label">Renk Belirle </label>:<br>
+                                             
+                                            <select class="form-select" aria-label="Default select example" 
+                                          wire:model = "color">
+                                                <option selected>İkon Belirleyin</option>
+                                                <option value="red">Kırmızı</option>
+                                                <option value="orange">Turuncu</option>
+                                                <option value="pink">pembe</option>
+                                                <option value="green">Yeşil</option>
+                                                <option value="green">Yeşil</option>
+                                                <option value="blue">Mavi</option>
                                                 
                                               </select>
                                         </div>

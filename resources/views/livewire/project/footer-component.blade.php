@@ -1,121 +1,62 @@
-
-
-<footer>
-    <div class="footer-top-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <div class="footer footer-one">
-                        <h2>Hakkımızda</h2>
-                        @foreach ($about as $s)
-                            
-             
-                        <p>{{$s->title}}</p>
-                   
-                        <div class="social-media">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-skype"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <div class="footer footer-two">
-                        <h2>FAALİYET ALANLARIMIZ</h2>
-                        <ul>
-                            @foreach ($whatdo as $item)
-                            <li>
-                                <a href="{{ route('whatdo.detail', $item->slug) }}">{{$item->title}}</a>
-                            </li>
-                            @endforeach
-                         
-                       
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <div class="footer footer-three">
-                        <h2>İLETİŞİMİ KOPARMAYIN</h2>
-                        <ul>
-                            @foreach ($setting as $item)
-                                
-                           
-                            <li>
-                                <i class="fa fa-clock-o"></i>Pazartesi - Cuma</li>
-                            <li>
-                                <i class="fa fa-map-marker"></i> {{$item->address}}</li>
-                            <li>
-                                <i class="fa fa-phone"></i> {{$item->contact}}</li>
-                            <li>
-                                <i class="fa fa-envelope-o"></i>{{$item->email}}</li>
-                     
-
-                                @endforeach
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                    <div class="footer footer-four">
-                        <h2>GALERİMİZ</h2>
-                        <ul>
-                            @foreach ($galery as $item)
-                                
-              
-                            <li>
-                                <a href="/galeri">
-                                    <img src="{{asset('storage/galery')}}/{{$item->image}}" alt="{{$item->image}}"> </a>
-                            </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+<footer id="site-footer" class="position-relative bg-red padding_top">
+    <div class="svg-footer-top-holder">
+        <div class="svg-footer-top"></div>
     </div>
-    <div class="footer-buttom-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="footer-buttom">
-                        <div class="scrollup">
-                            <a href="#">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
-                        </div>
-                        <p>eylemcagras.av.tr © Tüm Hakları Saklıdır</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20">
+                    <a href="index-kids.html" class="footer_logo bottom25"><img src="{{asset('assets')}}/kids/images/logo-white.png" alt="MegaOne"></a>
+                    <p class="whitecolor bottom25">Keep away from people who try to belittle your ambitions Small people always do that but the really great Friendly.</p>
+                    <div class="d-table w-100 address-item whitecolor bottom25">
+                        <span class="d-table-cell align-middle"><i class="fas fa-mobile-alt"></i></span>
+                        <p class="d-table-cell align-middle bottom0">
+                            +01 - 123 - 4567 <a class="d-block" href="mailto:web@support.com">email@support.com</a>
+                        </p>
                     </div>
+                    <ul class="social-icons white wow fadeInUp" data-wow-delay="300ms">
+                        <li><a href="javascript:void(0)" class=""><i class="fab fa-facebook-f"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class=""><i class="fab fa-twitter"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class=""><i class="fab fa-linkedin-in"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class=""><i class="fab fa-instagram"></i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20 pl-0 pl-lg-5">
+                    <h3 class="whitecolor bottom25">Our Services</h3>
+                    <ul class="links">
+                        <li><a href="index-logistic.html">Home</a></li>
+                        <li><a href="logistic/about.html">About Schooling</a></li>
+                        <li><a href="logistic/news-1.html">Latest News</a></li>
+                        <li><a href="logistic/pricing.html">Kids Admissions</a></li>
+                        <li><a href="logistic/contact.html">Contact Us</a></li>
+                        <li><a href="logistic/faq.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20">
+                    <h3 class="whitecolor bottom25">Latest News</h3>
+                    <ul class="latest_news whitecolor">
+                        <li> <a href="#.">Aenean tristique justo et... </a> <span class="date defaultcolor">15 March 2019</span> </li>
+                        <li> <a href="#.">Phasellus dapibus dictum augue... </a> <span class="date defaultcolor">15 March 2019</span> </li>
+                        <li> <a href="#.">Mauris blandit vitae. Praesent non... </a> <span class="date defaultcolor">15 March 2019</span> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20">
+                    <h3 class="whitecolor bottom25">Business hours</h3>
+                    <p class="whitecolor bottom25">Our support available to help you 24 hours a day, seven days week</p>
+                    <ul class="hours_links whitecolor">
+                        <li><span>Monday-Saturday:</span> <span>8.00-18.00</span></li>
+                        <li><span>Friday:</span> <span>09:00-21:00</span></li>
+                        <li><span>Sunday:</span> <span>Closed</span></li>
+                        <li><span>Calendar Events:</span> <span>Closed</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
-         
-        @foreach ($setting as $s)
-            
-
-<a href="https://wa.me/{{ $s->whatsapp }}" class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
-    </a>
-    @endforeach
     </div>
 </footer>
-
-
