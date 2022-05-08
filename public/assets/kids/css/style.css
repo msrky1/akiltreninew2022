@@ -146,7 +146,7 @@ h4,
 h5,
 .button,
 .numbered .tp-bullet .tp-count {
-    font-family: 'Handlee', cursive;
+    font-family: 'Montserrat';
 }
 
 h1 {
@@ -534,7 +534,7 @@ p {
 }
 
 .slider-middle-text{
-    font-family: 'Handlee', cursive;
+    font-family: 'Montserrat';
     font-weight: bold;
 }
 
@@ -1504,7 +1504,7 @@ ul.links li a::before,
     line-height: normal;
     margin: 16px 1.75rem;
     display: inline-block;
-    font-family: 'Handlee', cursive;
+    font-family: 'Montserrat';
     font-weight: bold;
 }
 
@@ -5925,7 +5925,7 @@ ul.latest_news li a:focus+span.defaultcolor {
     font-size: 50px;
     color: #606060;
     font-weight: 300;
-    font-family: 'Handlee', cursive;
+    font-family: 'Montserrat';
 }
 
 .standalone-detail .para_text{
@@ -5943,7 +5943,7 @@ ul.latest_news li a:focus+span.defaultcolor {
 .standalone-area .gradient-text1{
     font-weight: 300;
     margin-bottom: 12px;
-    font-family: 'Handlee', cursive;
+    font-family: 'Montserrat';
     font-size: 45px;
     color: #606060;
 }
