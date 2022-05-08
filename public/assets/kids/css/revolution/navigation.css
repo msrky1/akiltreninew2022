@@ -21,9 +21,9 @@
     width: 13px;
     height: 13px;
     position:relative;
-    border: 3px solid #c7d911;
+    border: 3px solid #0479ed;
     border-radius: 50%;
-    background: #c7d911;
+    background: #0479ed;
     cursor: pointer;
     box-sizing: content-box;
     -webkit-transition: all .5s ease-in-out;
@@ -41,13 +41,13 @@
 .surfing .tp-bullet.selected .tp-bullet-inner{
     transform: scale(1.4);
     margin-top:2px;
-    background: #ffb902;
+    background: #0479ed;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    border: 3px solid #ffb902;
+    border: 3px solid #0479ed;
 }
 
 .dark-slider .surfing .tp-bullet.selected .tp-bullet-inner{

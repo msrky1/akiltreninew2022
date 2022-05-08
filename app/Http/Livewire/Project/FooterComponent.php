@@ -6,7 +6,9 @@ use Livewire\Component;
 use App\Models\About;
 use App\Models\Whatdo;
 use App\Models\Setting;
+use App\Models\Blog;
 use App\Models\Galery;
+use Carbon\Carbon;
 
 class FooterComponent extends Component
 {
@@ -19,6 +21,9 @@ class FooterComponent extends Component
      
         $whatdo = Whatdo::orderBy('id', 'DESC')->paginate('6');
         $setting = Setting::all();
+
+        Carbon::setLocale('tr');
+        $blog = Blog::orderBy('id' , 'DESC')->paginate('6');
   
         $about = About::all();
      
@@ -33,7 +38,9 @@ class FooterComponent extends Component
   
             'whatdo' => $whatdo, 
   
-             'galery' => $galery
+             'galery' => $galery, 
+              
+             'blog' => $blog,
       
         ]);
     }

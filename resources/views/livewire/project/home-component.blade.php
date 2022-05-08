@@ -286,106 +286,33 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="heading-title wow fadeInLeft" data-wow-delay="200ms">
-                        <span class="defaultcolor text-center text-md-left">Quisque tellus risus, adipisci</span>
-                        <h2 class="darkcolor font-normal bottom30 text-center text-md-left">Awesome Kids Gallery</h2>
+                        <span class="defaultcolor text-center text-md-left">Galerimiz</span>
+                        <h2 class="darkcolor font-normal bottom30 text-center text-md-left">Galeri</h2>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="200ms">
-                    <p class="heading_space mt-n3 mt-sm-0 text-center text-md-left">Curabitur mollis bibendum luctus.
-                        Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus
-                        metus sollicitudin. Quisque vitae sodales lectus. </p>
+                    <p class="heading_space mt-n3 mt-sm-0 text-center text-md-left">Akıl Treni Koleji Galeri </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div id="ourteam-slider" class="owl-carousel">
-                        <div class="item">
+                        @foreach ($galery as $g)
+                            
+                         <div class="item">
                             <div class="team-box wow fadeInUp" data-wow-delay="150ms">
                                 <div class="image">
-                                    <a href="{{ asset('assets') }}/kids/images/team-1.jpg" data-fancybox>
-                                        <img src="{{ asset('assets') }}/kids/images/team-1.jpg" alt="">
+                                    <a href="{{ asset('storage') }}/galery/{{$g->image}}" data-fancybox>
+                                        <img src="{{ asset('storage') }}/galery/{{$g->image}}" alt="Akıl Treni Koleji">
                                     </a>
                                 </div>
                                 <div class="team-content">
-                                    <h4 class="darkcolor">Jason Wudex</h4>
-                                    <p>Grade One</p>
+                                    <h4 class="darkcolor">Akıl Treni Koleji</h4>
+                                   
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="team-box wow fadeInUp" data-wow-delay="200ms">
-                                <div class="image">
-                                    <a href="{{ asset('assets') }}/kids/images/team-2.jpg" data-fancybox>
-                                        <img src="{{ asset('assets') }}/kids/images/team-2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="team-content">
-                                    <h4 class="darkcolor">Mia Twain</h4>
-                                    <p>Grade Two</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box wow fadeInUp" data-wow-delay="250ms">
-                                <div class="image">
-                                    <a href="{{ asset('assets') }}/kids/images/team-3.jpg" data-fancybox>
-                                        <img src="{{ asset('assets') }}/kids/images/team-3.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="team-content">
-                                    <h4 class="darkcolor">Peter Farry</h4>
-                                    <p>Grade One</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box wow fadeInUp" data-wow-delay="300ms">
-                                <div class="image">
-                                    <a href="{{ asset('assets') }}/kids/images/team-4.jpg" data-fancybox>
-                                        <img src="{{ asset('assets') }}/kids/images/team-4.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="team-content">
-                                    <h4 class="darkcolor">Hayden Wood</h4>
-                                    <p>Grade Three</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box wow fadeInUp" data-wow-delay="150ms">
-                                <div class="image">
-                                    <a href="{{ asset('assets') }}/kids/images/team-1.jpg" data-fancybox>
-                                        <img src="{{ asset('assets') }}/kids/images/team-1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="team-content">
-                                    <h4 class="darkcolor">Shania Jackson</h4>
-                                    <p>Grade Two</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box wow fadeInUp" data-wow-delay="200ms">
-                                <div class="image">
-                                    <img src="{{ asset('assets') }}/kids/images/team-2.jpg" alt="">
-                                </div>
-                                <div class="team-content">
-                                    <h4 class="darkcolor">Jessica Biel</h4>
-                                    <p>Grade Five</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="team-box wow fadeInUp" data-wow-delay="250ms">
-                                <div class="image">
-                                    <img src="{{ asset('assets') }}/kids/images/team-3.jpg" alt="">
-                                </div>
-                                <div class="team-content">
-                                    <h4 class="darkcolor">Jessica Jung</h4>
-                                    <p>Grade Three</p>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
