@@ -15,6 +15,7 @@ use App\Models\Setting;
 use App\Models\About;
 use App\Models\Whatdo;
 use Carbon\Carbon;
+use App\Models\Classroom;
 
 
 
@@ -25,7 +26,7 @@ class HomeComponent extends Component
     {
 
 
-      Carbon::setLocale('tr');
+        Carbon::setLocale('tr');
            
         $slider = Slider::all();
         $Galery = Galery::orderBy('id' , 'DESC')->paginate('10');
@@ -36,6 +37,7 @@ class HomeComponent extends Component
         $blog = Blog::orderBy('id' , 'DESC')->paginate('10');
         $about = About::all();
         $whatdo = Whatdo::all();
+        $class = Classroom::all();
 
         return view('livewire.project.home-component', 
         
@@ -51,7 +53,8 @@ class HomeComponent extends Component
 
           'team' => $lawyer,
           'blog' => $blog,
-           'galery' => $Galery
+           'galery' => $Galery,
+           'class' => $class,
 
         
         

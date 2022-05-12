@@ -17,12 +17,17 @@
     <link rel="stylesheet" href="{{asset('assets')}}/css/owl.carousel.min.css">
     <link rel="stylesheet" href="{{asset('assets')}}/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="{{asset('assets')}}/css/cubeportfolio.min.css">
-    <link rel="stylesheet" href="{{asset('assets')}}/kids//css/tooltipster.min.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/kids/css/tooltipster.min.css">
     <link rel="stylesheet" href="{{asset('assets')}}/css/revolution-settings.min.css">
-    <link rel="stylesheet" href="{{asset('assets')}}/kids//css/revolution/navigation.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/kids/css/revolution/navigation.css">
     <link href="{{asset('assets')}}/css/LineIcons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('assets')}}/kids//css/custom.css">
-    <link rel="stylesheet" href="{{asset('assets')}}/kids//css/style.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/kids/css/custom.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/kids/css/style.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/kids/css2.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/kids/css.css">
+  
+   
+    
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -33,9 +38,10 @@
         @livewireStyles
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="90">
 
-        <livewire:project.menu-component />
+
+        <livewire:project.menu-component /> 
        
         <!-- Header Area End Here -->
 
@@ -61,6 +67,7 @@
 <script src="{{asset('assets')}}/kids//js/jquery-countTo.js"></script>
 <!--tooltip js-->
 <script src="{{asset('assets')}}/kids//js/tooltipster.min.js"></script>
+{{-- <script src="{{asset('assets')}}/js/slider.js"></script> --}}
 <!-- REVOLUTION JS FILES -->
 <script src="{{asset('assets')}}/js/jquery.themepunch.tools.min.js"></script>
 <script src="{{asset('assets')}}/js/jquery.themepunch.revolution.min.js"></script>

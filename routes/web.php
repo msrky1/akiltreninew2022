@@ -66,11 +66,17 @@ use App\Http\Livewire\Admin\Category\CategoryEditComponent;
 use App\Http\Livewire\Admin\AdminCategoryComponent;
 
 
+
 use App\Http\Livewire\Admin\AdminHelpComponent;
 use App\Http\Livewire\Admin\Setting\SettingEditComponent;
+use App\Http\Livewire\Admin\Classroom\AdminClassRoomComponent;
+use App\Http\Livewire\Admin\Classroom\AdminClassRoomAddComponent;
+use App\Http\Livewire\Admin\Classroom\AdminClassRoomEditComponent;
+
 use App\Http\Livewire\Test\TestComponent;
 use App\Http\Livewire\Test\TestEditComponent;
 use App\Http\Livewire\Project\BusinessPartnerComponent;
+use App\Http\Livewire\Project\Class\ClassDetailComponent;
 
 
 use App\Http\Livewire\Admin\Auth\LoginComponent;
@@ -136,6 +142,7 @@ Route::get('/sss' , QuestionsComponent::class);
  Route::get('/blog' , BlogComponent::class);
  Route::get('/iletisim' , ContactComponent::class);
  Route::get('/is-ortaklarimiz' , BusinessPartnerComponent::class);
+ Route::get('/class/detail/{classroom_id}' , ClassDetailComponent::class)->name('class.detail');
 
 
   Route::get('/neler-yapiyoruz/{slug}', WhatdoDetailComponent::class)->name('whatdo.detail');
@@ -248,6 +255,11 @@ Route::get('/admin/questions/edit/{question_id}' , QuestionEditComponent::class)
 
 Route::get('/admin/menu' , AdminMenuComponent::class)->name('admin.menu');
 
+//Room Add Component
+
+Route::get('/admin/class' , AdminClassRoomComponent::class)->name('admin.class');
+Route::get('/admin/class/add' , AdminClassRoomAddComponent::class)->name('admin.class.add');
+Route::get('/admin/class/edit/{class_id}' , AdminClassRoomEditComponent::class)->name('admin.class.edit');
 
 
 Route::get('/test/test' , TestComponent::class)->name('test');

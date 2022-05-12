@@ -15,6 +15,10 @@
             <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
             <div id="vertical-bullets" class="rev_slider fullwidthabanner white vertical-tpb" data-version="5.4.1">
                 <ul>
+          
+              
+
+
                     {{-- @foreach ($slider as $slide)
                     
         
@@ -133,38 +137,22 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center">
                     <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
-                        <span>Quisque tellus risus, adipisci </span>
-                        <h2 class="font-normal">Child's Education </h2>
+                        <span>Bursluluk Sınavı İçin Lütfen Sınıf Seçin ve Daha Sonra Formu Doldurun </span>
+                        <h2 class="font-normal">Bursluluk Sınavı Başvurusu</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <ul class="process-wrapp">
-                    <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
-                        <span class="pro-step bottom20">01</span>
-                        <p class="fontbold bottom20">Grade One</p>
-                        <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
+                    @foreach ($class as $cla)
+                        
+            
+       <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
+                              <span class="pro-step bottom20">    <a href="{{ route('class.detail', ['classroom_id' => $cla->id]) }}" >    {{$cla->classroom_id}} </a></span>
+                       <a href="aa" >  <p class="fontbold bottom20">{{$cla->classroom}}</p> </a>
+                        <p class="mt-n2 mt-sm-0">Lütfen Sınıf Seçin</p>
                     </li>
-                    <li class="whitecolor wow fadeIn" data-wow-delay="400ms">
-                        <span class="pro-step bottom20">02</span>
-                        <p class="fontbold bottom20">Grade Two</p>
-                        <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
-                    </li>
-                    <li class="whitecolor wow fadeIn active" data-wow-delay="500ms">
-                        <span class="pro-step bottom20">03</span>
-                        <p class="fontbold bottom20">Grade Three</p>
-                        <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
-                    </li>
-                    <li class="whitecolor wow fadeIn" data-wow-delay="600ms">
-                        <span class="pro-step bottom20">04</span>
-                        <p class="fontbold bottom20">Grade Four</p>
-                        <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
-                    </li>
-                    <li class="whitecolor wow fadeIn" data-wow-delay="700ms">
-                        <span class="pro-step bottom20">05</span>
-                        <p class="fontbold bottom20">Grade Five</p>
-                        <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
-                    </li>
+                    @endforeach
                 </ul>
             </div>
         </div>

@@ -18,7 +18,7 @@ class SliderEditComponent extends Component
     public $title; 
     public $description;
     public $link;
-    public $image;
+    public $image;  
     public $newimage;
     public $slider_id;
 
