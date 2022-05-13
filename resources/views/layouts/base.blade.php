@@ -26,16 +26,10 @@
     <link rel="stylesheet" href="{{asset('assets')}}/kids/css2.css">
     <link rel="stylesheet" href="{{asset('assets')}}/kids/css.css">
   
-   
+   @livewireStyles
     
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-Y2BNC5WD90');
-</script>
-        @livewireStyles
+
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -47,7 +41,7 @@
 
 {{ $slot }}
 
-
+@livewireScripts
  <livewire:project.footer-component /> 
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="{{asset('assets')}}/js/bundle.min.js"></script>
@@ -83,7 +77,7 @@
 <script src="{{asset('assets')}}/js/extensions/revolution.extension.video.min.js"></script>
 <!--custom functions and script-->
 <script src="{{asset('assets')}}/kids//js/functions.js"></script>
-        @livewireScripts
+       
     </body>
 
 </html>
