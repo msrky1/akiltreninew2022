@@ -148,7 +148,8 @@
                         
             
        <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
-                              <span class="pro-step bottom20">    <a href="{{ route('class.detail', ['classroom_id' => $cla->id]) }}" >    {{$cla->classroom_id}} </a></span>
+                              <span class="pro-step bottom20">   {{$cla->classroom_id}} </span>
+                              <a href="{{ route('class.detail', ['classroom_id' => $cla->classroom_id]) }}" > <button style="border-radius: 15px; padding:10px; color:green">Başvur</button> </a>
                        <a href="aa" >  <p class="fontbold bottom20">{{$cla->classroom}}</p> </a>
                         <p class="mt-n2 mt-sm-0">Lütfen Sınıf Seçin</p>
                     </li>

@@ -8,6 +8,7 @@ class WhatdoComponent extends Component
 {
     public function render()
     {
-        return view('livewire.project.whatdo-component')->layout('layouts.base');
+        return view('livewire.project.whatdo-component')->layout('layouts.base-w');
     }
 }
+    

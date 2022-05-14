@@ -1,102 +1,113 @@
-<div class="banner-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="main-bennar">
-                    <h2>İLETİŞİM</h2>
-                    <div class="breadcumb">
-                        <ul>
-                            <li>
-                                <a href="/">Anasayfa</a>
-                            </li>
-                            <li>İLETİŞİM</li>
-                        </ul>
+<main> 
+    <!--Page Header-->
+    <section id="main-banner-page" class="position-relative page-header contact-header section-nav-smooth parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="page-titles whitecolor text-center padding">
+                            <h2 class="font-bold"> İletişim</h2>
+                            <h3 class="font-light py-2">İletişim Nunumaralarımızdan Bizlere Ulaşabilirsiniz</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="gradient-bg title-wrap mt-n5">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 whitecolor">
+                            <h3 class="float-left">Başvuru</h3>
+                            <ul class="breadcrumb top10 bottom10 float-right">
+                                <li class="breadcrumb-item "><a href="/">Anasayfa</a></li>
+                                <li class="breadcrumb-item ">İletişim</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<!--  Banner Area End here -->
-<!-- Main Contact page Start here -->
-<div class="contact-page-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                <div class="contact-form-area">
-                    <h2>Lütfen Formu Doldurun!</h2>
-                    <form action="/" method="GET">
-                        <fieldset class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label>Adı : </label>
-                                    <input type="text" name="name" class="form-control" required="">
+        </section>
+        <!--Page Header ends -->
+        <!-- Contact US -->
+        <section id="stayconnect1" class="bglight position-relative padding_top padding_bottom_half noshadow">
+            <div class="container whitebox">
+                <div class="widget py-5">
+                    <div class="row">
+                        <div class="col-md-12 text-center wow fadeIn mt-n3" data-wow-delay="300ms">
+                            <h2 class="heading bottom30 darkcolor font-light2 pt-1"><span class="font-normal">İletişim</span> Adresleri
+                                <span class="divider-center"></span>
+                            </h2>
+                       
+                        </div>
+                      
+                        <div class="col-md-6 col-sm-6 order-sm-2">
+                            <div class="contact-meta px-2 text-center text-md-left">
+                                <div class="heading-title heading_small">
+                       
+                                  @foreach ($setting as $item)
+                                      
+                                
+                                    <h2 class="darkcolor font-normal mb-4">{{$item->name}}</h2>
+                                    <h3 class="darkcolor font-normal mb-4">{{$item->contact}}</h3>
+                                    <h3 class="darkcolor font-normal mb-4">Whatsapp: {{$item->whatsapp}}</h3>
+                                    <h3 class="darkcolor font-normal mb-4">Address: {{$item->address}}</h3>
+                                    @endforeach
                                 </div>
+                                
+                                <ul class="social-icons mt-4 mb-4 mb-sm-0 wow fadeInUp no-border darkcolor" data-wow-delay="300ms">
+                                    <li><a href="javascript:void(0)" class="facebook"><i class="fab fa-facebook-f"></i> </a> </li>
+                                    <li><a href="javascript:void(0)" class="twitter"><i class="fab fa-twitter"></i> </a> </li>
+                                    <li><a href="javascript:void(0)" class="linkedin"><i class="fab fa-linkedin-in"></i> </a> </li>
+                                    <li><a href="javascript:void(0)" class="insta"><i class="fab fa-instagram"></i> </a> </li>
+                                    <li><a href="javascript:void(0)" class="whatsapp"><i class="fab fa-whatsapp"></i> </a> </li>
+                                    <li><a href="javascript:void(0)"><i class="far fa-envelope"></i> </a> </li>
+                                </ul>
+                            </div><br>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12646.29086129616!2d36.89052468567331!3d37.588678076698244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1652520187241!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="row">
+                    @foreach ($setting as $s)
+                        
+                 
+                    <div class="col-lg-3 col-md-3">
+                        <div class="widget text-center top60 w-100 p-0">
+                            <div class="contact-box">
+                                <span class="icon-contact bluecolor"><i class="fas fa-mobile-alt"></i></span>
+                                <p class="bottom0"><a href="tel:+14046000396">{{$s->contact}}</a></p>
+                                <p class="bottom0"><a href="tel:+14046000396">{{$s->whatsapp}}</a></p>
+                         
+                             
                             </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label>E-Mail Adresi : </label>
-                                    <input type="email" name="email" class="form-control" required="">
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="widget text-center top60 w-100 p-0">
+                            <div class="contact-box">
+                                <span class="icon-contact bluecolor"><i class="fas fa-map-marker-alt"></i></span>
+                                <p class="bottom0">{{$s->address}}</p>
+                                <p class="d-block">Kahramanmaraş</p>
                             </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label>Telefon Numarası: </label>
-                                    <input type="tel" name="telephone" class="form-control" required="">
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="widget text-center top60 w-100 p-0">
+                            <div class="contact-box">
+                                <span class="icon-contact bluecolor"><i class="far fa-envelope"></i></span>
+                                <p class="bottom0"><a href="mailto:admin@website.com">{{$s->email}}</a></p>
+                               
                             </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label>Mesajınız : </label>
-                                    <textarea cols="40" rows="5" name="message" class="textarea form-control"></textarea>
-                                </div>
+                        </div>
+                    </div>
+                    {{-- <div class="col-lg-3 col-md-3">
+                        <div class="widget text-center top60 w-100 p-0">
+                            <div class="contact-box">
+                                <span class="icon-contact bluecolor"><i class="far fa-clock"></i></span>
+                                <p class="bottom15">UTC−05:00 <span class="d-block">UTC+01:00</span></p>
                             </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <button class="btn-send submit-buttom" type="submit">Mesajı Gönder</button>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
+                        </div>
+                    </div> --}}
+    
+                    @endforeach
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                @foreach ($setting as $item)
-                    
-              
-                <div class="office-address">
-                    <h2>OFİS ADRESİ</h2>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-map-marker"></i>
-                                <span>{{$item->address}}</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-phone"></i>
-                                <span>{{$item->contact}}</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-envelope-o"></i>
-                                <span>{{$item->email}}</span>
-                            </a>
-                        </li>
-                        <li>
-                           
-                        </li>
-                    </ul>
-                </div>
-                @endforeach
-        <div class="google-map-area">
-                    <div id="googleMap" style="width:350px;height:200px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.1175248178565!2d36.83464131531247!3d37.59939297979175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152ddb6b2b807d11%3A0x629ce061401199eb!2zw4dhxJ9yYcWfIEh1a3VrIELDvHJvc3U!5e0!3m2!1str!2str!4v1648730226959!5m2!1str!2str" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
-                </div> 
-            </div>
-           
-        </div>
-    </div>
-</div>
-<!-- Main Contact page End here -->
+        </section>
+    </main>

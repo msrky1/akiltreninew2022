@@ -9,6 +9,9 @@
     <!-- description -->
     <meta name="description" content="Akıl Treni Koleji">
     <!-- keywords -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <meta name="keywords" content="Akıl Treni Koleji">
     <!-- Page Title -->
     <title>Akıl Treni Koleji</title>

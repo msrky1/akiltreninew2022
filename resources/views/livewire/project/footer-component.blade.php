@@ -28,7 +28,7 @@
             @endforeach
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer_panel padding_bottom_half bottom20 pl-0 pl-lg-5">
-                    <h3 class="whitecolor bottom25">Our Services</h3>
+                    <h3 class="whitecolor bottom25">Sayfalar</h3>
                     <ul class="links">
                         <li><a href="/">Anasayfa</a></li>
                         <li><a href="/">Hakkımızda</a></li>

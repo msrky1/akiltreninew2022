@@ -56,8 +56,9 @@ use App\Http\Livewire\Admin\AdminSliderComponent;
 use App\Http\Livewire\Admin\Slider\SliderAddComponent;
 use App\Http\Livewire\Admin\Slider\SliderEditComponent;
 
+//
 
-
+use App\Http\Livewire\Admin\Applications\ApplicationComponent;
 
 use App\Http\Livewire\Admin\Category\CategoryAddComponent;
 use App\Http\Livewire\Admin\Category\CategoryEditComponent;
@@ -80,6 +81,8 @@ use App\Http\Livewire\Project\Class\ClassDetailComponent;
 
 
 use App\Http\Livewire\Admin\Auth\LoginComponent;
+
+use App\Http\Controllers\BasvuruController;
 
 
 
@@ -137,7 +140,7 @@ Route::get('/' , HomeComponent::class);
 Route::get('/galeri' , GaleryComponent::class);
 Route::get('/hakkimizda' , AboutComponent::class);
 Route::get('/sss' , QuestionsComponent::class);
- Route::get('/neler-yapiyoruz' , WhatdoComponent::class);
+ Route::get('/duyurular' , WhatdoComponent::class);
  Route::get('/ekibimiz' , TeamComponent::class);
  Route::get('/blog' , BlogComponent::class);
  Route::get('/iletisim' , ContactComponent::class);
@@ -145,11 +148,11 @@ Route::get('/sss' , QuestionsComponent::class);
  Route::get('/class/detail/{classroom_id}' , ClassDetailComponent::class)->name('class.detail');
 
 
-  Route::get('/neler-yapiyoruz/{slug}', WhatdoDetailComponent::class)->name('whatdo.detail');
+  Route::get('/duyuru/{slug}', WhatdoDetailComponent::class)->name('whatdo.detail');
   Route::get('/blog/{slug}', BlogDetailComponent::class)->name('blog.detail');
   Route::get('/category/{category_slug}', CategoryDetailComponent::class)->name('blog.category');
 
-
+  Route::post('/sinav/basvurusu' , [BasvuruController::class , 'addApp'])->name('add.basvuru');
 
 
 
@@ -255,6 +258,10 @@ Route::get('/admin/questions/edit/{question_id}' , QuestionEditComponent::class)
 
 Route::get('/admin/menu' , AdminMenuComponent::class)->name('admin.menu');
 
+
+// Başvuru Listeleme
+Route::get('/admin/applications' , ApplicationComponent::class)->name('admin.app');
+
 //Room Add Component
 
 Route::get('/admin/class' , AdminClassRoomComponent::class)->name('admin.class');
@@ -264,8 +271,6 @@ Route::get('/admin/class/edit/{class_id}' , AdminClassRoomEditComponent::class)-
 
 Route::get('/test/test' , TestComponent::class)->name('test');
 Route::get('/test/test/{setting_id}' , TestEditComponent::class)->name('test.edit');
-
-
 
 
 
