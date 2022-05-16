@@ -1,67 +1,62 @@
- <div class="banner-area">
-            <div class="container">
+<main>
+     <!--Page Header-->
+     <section id="main-banner-page" class="position-relative page-header contact-header section-nav-smooth parallax">
+        <div class="container">
+            <div class="row">
+                            <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="page-titles whitecolor text-center padding_top padding_bottom">
+                        <h2 class="font-xlight heading-title-small">Akıl Treni Haber Sayfası</h2>
+                        <h2 class="font-bold">Bizden Haberleri Bu Bölümden Takip Edebilirsiniz.</h2>
+                        {{-- <h2 class="font-xlight heading-title-small">Hakkımızda</h2> --}}
+                        <h4 class="font-light pt-2">Bizden Haberler</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="gradient-bg title-wrap">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="main-bennar">
-                            <h2>Blog</h2>
-                            <div class="breadcumb">
-                                <ul>
-                                    <li>
-                                        <a href="/">Anasayfa</a>
-                                    </li>
-                                    <li>Blog</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-lg-12 col-md-12 whitecolor">
+                        <h3 class="float-left">Haberler</h3>
+                        <ul class="breadcrumb top10 bottom10 float-right">
+                            <li class="breadcrumb-item hover-light"><a href="/">Anasayfa</a></li>
+                            <li class="breadcrumb-item hover-light">Haberler</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!--  Banner Area End here -->
-        <!-- Latest News Area Start Here -->
-        <div class="latest-news-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="section-title-area">
-                            <h2>Blog Yazılarım</h2>
-                            <p>Hukuk adalete yönelik iradedir. (Radbruch)</p>
+    </section>
+    <section id="our-blog" class="bglight padding_top padding_bottom_half">
+        <div class="container">
+            <div id="blog-measonry" class="cbp">
+            
+                @foreach ($blog as $item)
+                  @if ($item->status == 'açık'  )
+                   
+              <div class="cbp-item">
+                    <div class="news_item shadow text-center text-md-left">
+                        <a class="image" href="{{route('blog.detail' , [$item->slug])}}">
+                            <img src="{{asset('storage/blog')}}/{{$item->image}}" alt="{{$item->title}}" class="img-responsive">
+                        </a>
+                        <div class="news_desc">
+                            <h3 class="text-capitalize font-normal darkcolor"><a href="news-detail.html">{{$item->title}}</a></h3>
+                            <ul class="meta-tags top20 bottom20">
+                                <li><a href="#."><i class="fas fa-calendar-alt"></i>{{$item->created_at->diffForHumans()}}</a></li>
+                                <li><a href="#."> <i class="far fa-user"></i> Admin </a></li>
+                                {{-- <li><a href="#."><i class="far fa-comment-dots"></i>8</a></li> --}}
+                            </ul>
+                            <p class="bottom35">{!! $item->description = Str::limit($item->description, 100) !!}</p>
+                            <a href="{{route('blog.detail' , [$item->slug])}}" class="button btn-secondary">Haber Detay</a>
                         </div>
                     </div>
-                </div>
-                <div class="row">
+                </div> 
 
-                    @foreach ($blog as $item)
-                        
-        
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <div class="single-news-area">
-                            <div class="news-featured-image">
-                                <a href="{{route('blog.detail' , [$item->slug])}}">
-                                    <img src="{{asset('storage/blog')}}/{{$item->image}}" alt="image">
-                                </a>
-                                <ul>
-                                    <li class="active">{{$item->created_at->diffForHumans()}}</li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-user"> </i> Admin</a>
-                                    </li>
-                                  
-                                </ul>
-                            </div>
-                            <h3>
-                                <a href="{{route('blog.detail' , [$item->slug])}}">{{$item->title}}</a>
-                            </h3>
-                            <p>{!! $item->description = Str::limit($item->description, 100) !!}</p>
-                        </div>
-                    </div>
-
-                    @endforeach
-                </div>
-                <div class="pagination-area">
-                    <div class="row">
-                        
-                    </div>
-                </div>
-            </div>
+   
+                      @endif
+         
+                @endforeach
+                
         </div>
+    </section>
+</main>

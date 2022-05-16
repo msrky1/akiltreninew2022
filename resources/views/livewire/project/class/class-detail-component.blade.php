@@ -71,7 +71,7 @@
                     <div class="col-md-6 col-sm-6">
                         <div class="heading-title  wow fadeInUp" data-wow-delay="300ms">
                             <form class="getin_form wow fadeInUp" data-wow-delay="400ms" id="contact-form-data"
-                                enctype="multipart/form-data" action="{{ route('add.basvuru') }}" method="POST">
+                                enctype="multipart/form-data" action="{{route('add.basvuru')}}" method="POST">
                                 @csrf
                                 <div class="row px-2">
                                     <div class="col-md-12 col-sm-12" id="result"></div>

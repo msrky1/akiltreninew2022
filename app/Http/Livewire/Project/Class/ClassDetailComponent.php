@@ -22,6 +22,8 @@ class ClassDetailComponent extends Component
          $this->$classroom_id = $classroom_id;
 
     }
+    
+
 
     public function addApp() {
         

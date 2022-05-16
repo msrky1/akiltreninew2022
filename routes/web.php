@@ -130,10 +130,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 
-
 Route::middleware(['auth:sanctum', 'verified'])->get('/logout', function () {
     return Inertia::render('/');
 })->name('logout');
+Route::post('/sinav/basvurusu' , [BasvuruController::class , 'addApp'])->name('add.basvuru');
 
 
 Route::get('/' , HomeComponent::class);
@@ -152,7 +152,8 @@ Route::get('/sss' , QuestionsComponent::class);
   Route::get('/blog/{slug}', BlogDetailComponent::class)->name('blog.detail');
   Route::get('/category/{category_slug}', CategoryDetailComponent::class)->name('blog.category');
 
-  Route::post('/sinav/basvurusu' , [BasvuruController::class , 'addApp'])->name('add.basvuru');
+
+  Route::post('/sinav/basvurusu/onayla' , [BasvuruController::class , 'addApprow'])->name('add.basvuru.onay');
 
 
 
@@ -261,6 +262,7 @@ Route::get('/admin/menu' , AdminMenuComponent::class)->name('admin.menu');
 
 // Başvuru Listeleme
 Route::get('/admin/applications' , ApplicationComponent::class)->name('admin.app');
+
 
 //Room Add Component
 
