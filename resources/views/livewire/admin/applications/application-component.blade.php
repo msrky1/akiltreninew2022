@@ -18,18 +18,24 @@
                     <a class="btn app-btn-primary" href="/">
                         Yeni Başvuru Ekle
                     </a>
+                    @foreach ($lock as $item)
+                        
+                  @if ($item->lock == "Açık")
+                   
                     <a class="btn app-btn-primary" wire:click.prevent="tableReset" href="#">
                         Tüm Başvuruları Sıfırla
                     </a>
 
-                    <select wire:cllick.prent="updated">
+                    @endif
+                    @endforeach
+                    {{-- <select wire:cllick.prent="updated">
 
                 
                             <option>Açık</option>
                             <option>Kapalı</option>
                        
            
-                    </select>
+                    </select> --}}
                 </div>
 
                 @if (Session::has('message'))

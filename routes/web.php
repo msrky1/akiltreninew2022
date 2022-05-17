@@ -265,7 +265,7 @@ Route::get('/admin/menu' , AdminMenuComponent::class)->name('admin.menu');
 // Başvuru Listeleme
 Route::get('/admin/applications' , ApplicationComponent::class)->name('admin.app');
 Route::get('/admin/onaylanan/basvurular' , AcceptedComponent::class)->name('admin.app.bas');
-Route::get('/admin/kilit/1' , LockComponent::class)->name('admin.app.lock');
+Route::get('/admin/kilit/{lock_id}' , LockComponent::class)->name('admin.lock.edit');
 
 
 //Room Add Component

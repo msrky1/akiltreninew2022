@@ -15,8 +15,8 @@
             <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
             <div id="vertical-bullets" class="rev_slider fullwidthabanner white vertical-tpb" data-version="5.4.1">
                 <ul>
-          
-              
+
+
 
 
                     {{-- @foreach ($slider as $slide)
@@ -96,9 +96,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3> Duyurular </h3> 
+                <h3> Duyurular </h3>
                 <div id="services-slider" class="owl-carousel">
-               
+
                     @foreach ($whatdo as $wh)
                         <div class="item">
                             <div class="service-box bg-{!! $wh->color !!}">
@@ -129,42 +129,48 @@
     </section>
     <!--Some Feature ends-->
     <!-- WOrk Process-->
-    <section id="our-process" class="padding bg-red">
-        <div class="svg-process-top-holder">
-            <div class="svg-process-top"></div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
-                    <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
-                        <span>Bursluluk Sınavı İçin Lütfen Sınıf Seçin ve Daha Sonra Formu Doldurun </span>
-                        <h2 class="font-normal">Bursluluk Sınavı Başvurusu</h2>
+    @foreach ($lock as $item)
+        @if ($item->lock == 'Açık')
+            <section id="our-process" class="padding bg-red">
+                <div class="svg-process-top-holder">
+                    <div class="svg-process-top"></div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 text-center">
+                            <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
+                                <span>Bursluluk Sınavı İçin Lütfen Sınıf Seçin ve Daha Sonra Formu Doldurun </span>
+                                <h2 class="font-normal">Bursluluk Sınavı Başvurusu</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="process-wrapp">
+                            @foreach ($class as $cla)
+                                <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
+                                    <span class="pro-step bottom20"> {{ $cla->classroom_id }} </span>
+                                    <a href="{{ route('class.detail', ['classroom_id' => $cla->classroom_id]) }}">
+                                        <button style="border-radius: 15px; padding:10px; color:green">Başvur</button>
+                                    </a>
+                                    <a href="aa">
+                                        <p class="fontbold bottom20">{{ $cla->classroom }}</p>
+                                    </a>
+                                    <p class="mt-n2 mt-sm-0">Lütfen Sınıf Seçin</p>
+                                </li>
+                            @endforeach
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <ul class="process-wrapp">
-                    @foreach ($class as $cla)
-                        
-            
-       <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
-                              <span class="pro-step bottom20">   {{$cla->classroom_id}} </span>
-                              <a href="{{ route('class.detail', ['classroom_id' => $cla->classroom_id]) }}" > <button style="border-radius: 15px; padding:10px; color:green">Başvur</button> </a>
-                       <a href="aa" >  <p class="fontbold bottom20">{{$cla->classroom}}</p> </a>
-                        <p class="mt-n2 mt-sm-0">Lütfen Sınıf Seçin</p>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
-        <div class="svg-process-bottom-holder">
-            <div class="svg-process-bottom"></div>
-        </div>
+                <div class="svg-process-bottom-holder">
+                    <div class="svg-process-bottom"></div>
+                </div>
 
-    </section>
+            </section>
+        @endif
+    @endforeach
     <!--WOrk Process ends-->
     <!-- Mobile Apps -->
-    <section id="our-apps" class="padding">
+    {{-- <section id="our-apps" class="padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-7 col-sm-12">
@@ -236,10 +242,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--Mobile Apps ends-->
     <!-- Counters -->
-    <section id="bg-counters" class="padding bg-counters bg-orange">
+    {{-- <section id="bg-counters" class="padding bg-counters bg-orange">
         <div class="svg-counter-top-holder">
             <div class="svg-counter-top"></div>
         </div>
@@ -267,7 +273,7 @@
         <div class="svg-counter-bottom-holder">
             <div class="svg-counter-bottom"></div>
         </div>
-    </section>
+    </section> --}}
     <!-- Counters ends-->
     <!-- Our Team-->
     <section id="our-team" class="padding_top half-section-alt teams-border">
@@ -287,20 +293,20 @@
                 <div class="col-md-12">
                     <div id="ourteam-slider" class="owl-carousel">
                         @foreach ($galery as $g)
-                            
-                         <div class="item">
-                            <div class="team-box wow fadeInUp" data-wow-delay="150ms">
-                                <div class="image">
-                                    <a href="{{ asset('storage') }}/galery/{{$g->image}}" data-fancybox>
-                                        <img src="{{ asset('storage') }}/galery/{{$g->image}}" alt="Akıl Treni Koleji">
-                                    </a>
-                                </div>
-                                <div class="team-content">
-                                    <h4 class="darkcolor">Akıl Treni Koleji</h4>
-                                   
+                            <div class="item">
+                                <div class="team-box wow fadeInUp" data-wow-delay="150ms">
+                                    <div class="image">
+                                        <a href="{{ asset('storage') }}/galery/{{ $g->image }}" data-fancybox>
+                                            <img src="{{ asset('storage') }}/galery/{{ $g->image }}"
+                                                alt="Akıl Treni Koleji">
+                                        </a>
+                                    </div>
+                                    <div class="team-content">
+                                        <h4 class="darkcolor">Akıl Treni Koleji</h4>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         @endforeach
                     </div>
                 </div>
@@ -365,7 +371,7 @@
         </div>
     </section>
     <!-- Partners ends-->
-    <!-- Testimonials -->
+    {{-- <!-- Testimonials -->
     <section id="our-testimonial" class="bglight padding_bottom">
         <div class="svg-testimonial-top-holder">
             <div class="svg-testimonial-top"></div>
@@ -443,7 +449,7 @@
             <div class="svg-testimonial-bottom"></div>
         </div>
     </section>
-    <!--testimonials end-->
+    <!--testimonials end--> --}}
     <!-- Contact US -->
     <section id="stayconnect" class="bglight position-relative">
         <div class="container">

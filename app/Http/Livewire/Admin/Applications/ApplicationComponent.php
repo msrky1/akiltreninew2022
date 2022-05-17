@@ -13,22 +13,7 @@ class ApplicationComponent extends Component
     public $email;
     public $tc;
     
-   public $lock;
-    public $lock_id;
-  
-
-    public function mount($lock_id) {
-        $lock = Lock::where('id', $lock_id)->first();
-
-        $this->lock =  $lock->lock;
-        $this->lock_id = $lock->id;
-
-    }
-    public function updated() {
-
-        $lock = Lock::find($this->lock_id);      
-        $lock->lock = $this->lock;
-    }
+ 
 
     public function tableReset() {
     

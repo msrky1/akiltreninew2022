@@ -18,6 +18,15 @@
                     <a class="btn app-btn-primary" href="/">
                     Yeni Başvuru Ekle
                     </a>
+                      
+                    @foreach ($lock as $item)
+
+                     
+                    <a class="btn app-btn-primary" href="{{ route('admin.lock.edit', ['lock_id' => $item->id ]) }}">
+                        {{$item->lock}}
+                        </a>
+                    @endforeach
+                 
                     {{-- <a class="btn app-btn-primary" wire:click.prevent="tableReset" href="#">
                         Tablo Reset 
                         </a> --}}

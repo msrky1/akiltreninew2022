@@ -17,7 +17,7 @@
                             @if (Session::has('message'))
                                 <div class="alert alert-success">
                                     <strong>{{ Session::get('message') }}</strong> <a style="color: red"
-                                        href="{{ route('admin.app') }}"> Başvurulara Dön</a>
+                                        href="{{ route('admin.app.bas') }}"> Başvurulara Dön</a>
                                 </div>
                             @endif
                             <div class="app-card-body">
@@ -27,12 +27,15 @@
                                             <div class="mb-3">
                                      
                                         
-                                                <select>
-                                                    
-                                            </select>
-
-
-
+                                                <label for="setting-input-3" class="form-label">Başvuruyu Açın ve ya Kapatın</label>:
+                                                <select class="form-select" aria-label="Default select example"
+                                                    wire:model="lock">
+                                                    <option wire:model="lock" selected>Açın veya Kapayın</option>
+                                        
+                                                        <option value="Açık">Açık</option>
+                                                        <option value="Kapalı">Kapalı</option>
+                                           
+                                                </select>
                                      
 
                                     </div>
@@ -99,7 +102,7 @@
             <!--//container-fluid-->
         </div>
         <!--//app-content-->
-</main>
+</main> 
 <script>
     ClassicEditor
         .create(document.querySelector('#description'))

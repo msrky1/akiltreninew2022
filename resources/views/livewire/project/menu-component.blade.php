@@ -24,9 +24,22 @@
                         <li class="nav-item dropdown position-relative">
                             <a  class="nav-link active pagescroll" href="#header"> Anasayfa </a>
                         </li>
+
+                        @foreach ($lock as $item)
+                            
+                        @if ($item->lock == 'Açık')
+                            
+                     
+                       
                         <li class="nav-item">
                             <a class="nav-link pagescroll" href="#our-process">Kurumsal</a>
                         </li>
+                        
+
+
+                        @endif
+
+                        @endforeach
                         <li class="nav-item dropdown static">
                             <a class="nav-link pagescroll" href="#our-apps"> Şubelerimiz </a>
                         </li>
