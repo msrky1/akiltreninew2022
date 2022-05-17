@@ -65,6 +65,8 @@ use App\Http\Livewire\Admin\Category\CategoryEditComponent;
 
 
 use App\Http\Livewire\Admin\AdminCategoryComponent;
+use App\Http\Livewire\Admin\Accept\AcceptedComponent;
+use App\Http\Livewire\Admin\Lock\LockComponent;
 
 
 
@@ -262,6 +264,8 @@ Route::get('/admin/menu' , AdminMenuComponent::class)->name('admin.menu');
 
 // Başvuru Listeleme
 Route::get('/admin/applications' , ApplicationComponent::class)->name('admin.app');
+Route::get('/admin/onaylanan/basvurular' , AcceptedComponent::class)->name('admin.app.bas');
+Route::get('/admin/kilit/1' , LockComponent::class)->name('admin.app.lock');
 
 
 //Room Add Component

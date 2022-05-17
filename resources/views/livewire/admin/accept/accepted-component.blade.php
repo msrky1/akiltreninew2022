@@ -16,22 +16,13 @@
 
                 <div class="col-auto">
                     <a class="btn app-btn-primary" href="/">
-                        Yeni Başvuru Ekle
+                    Yeni Başvuru Ekle
                     </a>
-                    <a class="btn app-btn-primary" wire:click.prevent="tableReset" href="#">
-                        Tüm Başvuruları Sıfırla
-                    </a>
-
-                    <select wire:cllick.prent="updated">
-
-                
-                            <option>Açık</option>
-                            <option>Kapalı</option>
-                       
-           
-                    </select>
+                    {{-- <a class="btn app-btn-primary" wire:click.prevent="tableReset" href="#">
+                        Tablo Reset 
+                        </a> --}}
                 </div>
-
+             
                 @if (Session::has('message'))
                     <div class="alert alert-success">
                         <strong>{{ Session::get('message') }}</strong>
@@ -52,44 +43,26 @@
                                                 <th class="cell">Adı Soyadı</th>
                                                 <th class="cell">Email Adresi</th>
                                                 <th class="cell">TC Kimlik Numarası</th>
-                                                <th class="cell">Aksiyonlar</th>
-                                                <th class="cell"></th>
+                                                
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach ($app as $s)
+                                            @foreach ($approved as $s)
                                                 <tr>
                                                     <td class="cell">#{{ $s->id }}</td>
-
+                                                 
 
                                                     <td class="cell"><span
                                                             class="truncate">{{ $s->name }}</span></td>
                                                     <td class="cell">{{ $s->email }}</td>
                                                     <td class="cell">{{ $s->tc }}</td>
-
-                                                    <td class="cell"><a class="btn-sm app-btn-secondary"
+                                                  
+                                                    {{-- <td class="cell"><a class="btn-sm app-btn-secondary"
                                                             href="{{ route('admin.slider.edit', ['slider_id' => $s->id]) }}">
-                                                            Düzenle
+                                                        Düzenle
                                                         </a>
-
-                                                        <form action="{{ route('add.basvuru.onay') }}" method="POST"
-                                                            enctype="multipart/form-data">
-                                                            @csrf
-                                                            <input type="hidden" value="{{ $s->name }}"
-                                                                name="name">
-                                                            <input type="hidden" value="{{ $s->email }}"
-                                                                name="email">
-                                                            <input type="hidden" value="{{ $s->tc }}" name="tc">
-                                                            <input type="hidden" value="{{ $s->id }}" name="id">
-
-
-                                                            <a href="#" class="btn-sm app-btn-danger"> <button
-                                                                    type="submit"
-                                                                    style="border-radius: 50px; padding:5px; margin:10px">
-                                                                    Onayla </button></a>
-                                                    </td>
-                                                </tr>
-                                                </form>
+                                                          --}}
+                                       
                                             @endforeach
 
                                         </tbody>
@@ -106,11 +79,11 @@
                     </div>
                     <!--//tab-pane-->
 
-
+                 
                     <!--//tab-pane-->
 
-
-
+                  
+                  
                     <!--//tab-pane-->
                 </div>
                 <!--//tab-content-->
