@@ -59,6 +59,8 @@ class HomeComponent extends Component
            'class' => $class,
            'lock' => $lock,
 
+           'questions' => $question
+
         
         
         ]

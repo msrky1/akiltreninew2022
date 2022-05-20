@@ -69,6 +69,15 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6">
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                         <div class="heading-title  wow fadeInUp" data-wow-delay="300ms">
                             <form class="getin_form wow fadeInUp" data-wow-delay="400ms" id="contact-form-data"
                                 enctype="multipart/form-data" action="{{route('add.basvuru')}}" method="POST">

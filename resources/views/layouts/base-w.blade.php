@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
@@ -7,9 +7,9 @@
     <!-- Author -->
     <meta name="author" content="Themes Industry">
     <!-- description -->
-    <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with 8 ready home page demos.">
+    <meta name="description" content="Akıl Treni Koleji">
     <!-- keywords -->
-    <meta name="keywords" content="Creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq">
+    <meta name="keywords" content="kahramanmaraş, Kolej, Kahramanmaraş Kolej, Akıl Treni">
     <!-- Page Title -->
     <title>Akıl Treni Koleji</title>
     {{-- <link href="{{asset('assets')}}/images/favicon.ico" rel="icon"> --}}
@@ -37,7 +37,7 @@
         <header class="site-header" id="header">
             <nav class="navbar navbar-expand-lg transparent-bg static-nav">
                 <div class="container">
-                    <a class="navbar-brand" href="index-logistic.html">
+                    <a class="navbar-brand" href="/">
                         <img src="{{asset('assets')}}/kids/images/logo-white.png" alt="logo" class="logo-default">
                     <img src="{{asset('assets')}}/kids/images/logo-white.png" alt="logo" class="logo-scrolled">
                     </a>

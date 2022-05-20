@@ -33,6 +33,7 @@ class BasvuruController extends Controller
             $request->validate([
                 'tc' => 'required|max:11', 
                 'tc' => 'required|min:11', 
+                'tc' => 'required|unique:applications'
                
             ]);
         }

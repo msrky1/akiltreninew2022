@@ -7,7 +7,7 @@
 			    
 			    <div class="row g-3 mb-4 align-items-center justify-content-between">
 				    <div class="col-auto">
-			            <h1 class="app-page-title mb-0">Faaliyet Alanlarımız
+			            <h1 class="app-page-title mb-0">Duyurular
 						</h1>
 				    </div>
 				    
@@ -17,7 +17,7 @@
                 <div class="col-auto">						    
                     <a class="btn app-btn-primary" href="{{route('admin.whatdo.add')}}">
                 
-                      Yeni Ekle
+                      Yeni Duyuru Ekle
                     </a>
                 </div>    @if (Session::has('message'))
 				<div class="alert alert-success">

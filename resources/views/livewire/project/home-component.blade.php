@@ -168,6 +168,8 @@
             </section>
         @endif
     @endforeach
+
+    
     <!--WOrk Process ends-->
     <!-- Mobile Apps -->
     {{-- <section id="our-apps" class="padding">
@@ -275,18 +277,66 @@
         </div>
     </section> --}}
     <!-- Counters ends-->
+    <section id="our-apps" class="padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-7 col-sm-12">
+                    <div class="heading-title bottom30 wow fadeInLeft" data-wow-delay="200ms">
+                        <span class="defaultcolor text-center text-md-left">@foreach ($about as $item)
+                        {{$item->title}}
+                            @endforeach</span>
+                        <h2 class="bottom30 darkcolor font-normal text-center text-md-left"> @foreach ($about as $item)
+                           {{$item->title_one}}
+                            @endforeach  </h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 col-sm-12 wow fadeInRight" data-wow-delay="200ms">
+                    <p class="heading_space mt-n3 mt-sm-0 text-center text-md-left">
+                        
+                        @foreach ($about as $item)
+                        <p>{{$item->description}}</p>
+                        @endforeach
+                     
+                </div>
+            </div>
+      
+        </div>
+    </section>
+
+    <section id="our-questions" class="padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-7 col-sm-12">
+                    <div class="heading-title bottom30 wow fadeInLeft" data-wow-delay="200ms">
+                        <span class="defaultcolor text-center text-md-left">Akıl Treni Koleji</span>
+                        <h2 class="bottom30 darkcolor font-normal text-center text-md-left">  Sık Sorulan Sorular </h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 col-sm-12 wow fadeInRight" data-wow-delay="200ms">
+                    <p class="heading_space mt-n3 mt-sm-0 text-center text-md-left">
+                        
+                        @foreach ($questions as $item)
+                        <h3>{{$item->title}}</h3>
+                        <p>{{$item->description}}</p>
+                        @endforeach
+                     
+                </div>
+            </div>
+      
+        </div>
+    </section>
     <!-- Our Team-->
     <section id="our-team" class="padding_top half-section-alt teams-border">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="heading-title wow fadeInLeft" data-wow-delay="200ms">
-                        <span class="defaultcolor text-center text-md-left">Galerimiz</span>
+                        <span class="defaultcolor text-center text-md-left">Akıl Treni Koleji</span>
                         <h2 class="darkcolor font-normal bottom30 text-center text-md-left">Galeri</h2>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="200ms">
-                    <p class="heading_space mt-n3 mt-sm-0 text-center text-md-left">Akıl Treni Koleji Galeri </p>
+                  
                 </div>
             </div>
             <div class="row">
@@ -319,7 +369,7 @@
     <!-- Our Team ends-->
 
     <!-- Partners-->
-    <section id="our-partners" class="padding_top padding_bottom bglight">
+    {{-- <section id="our-partners" class="padding_top padding_bottom bglight">
         <div class="container">
             <div class="row">
                 <h2 class="d-none">Partners Carousel</h2>
@@ -369,7 +419,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Partners ends-->
     {{-- <!-- Testimonials -->
     <section id="our-testimonial" class="bglight padding_bottom">
@@ -451,7 +501,7 @@
     </section>
     <!--testimonials end--> --}}
     <!-- Contact US -->
-    <section id="stayconnect" class="bglight position-relative">
+    {{-- <section id="stayconnect" class="bglight position-relative">
         <div class="container">
             <div class="contactus-wrapp">
                 <div class="row">
@@ -495,7 +545,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- Contact US ends -->
     <!--Site Footer Here-->
 

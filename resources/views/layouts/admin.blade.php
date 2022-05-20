@@ -119,7 +119,7 @@
                 <div class="app-branding">
                     <a class="app-logo" href="/admin/home"><img class="logo-icon mr-2"
                             src="{{ asset('admin') }}/assets/images/app-logo.svg" alt="logo"><span
-                            class="logo-text">EYLEM ÇAĞRAŞ</span></a>
+                            class="logo-text">Akıl Treni Koleji</span></a>
 
                 </div>
                 <!--//app-branding-->
@@ -164,9 +164,8 @@
                             <a class="nav-link {{ request()->is('admin/class*') ? 'active' : '' }}"
                                 href="/admin/class">
                                 <span class="nav-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-back" viewBox="0 0 16 16">
-                                        <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/>
-                                      </svg>
+                                    <img width="30" height="30" src="{{asset('assets')}}/icons/003.svg" alt="">
+
                                 </span>
                                 <span class="nav-link-text">Sınıf</span>
 
@@ -178,9 +177,7 @@
                             <a class="nav-link {{ request()->is('admin/applications*') ? 'active' : '' }}"
                                 href="/admin/applications">
                                 <span class="nav-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-back" viewBox="0 0 16 16">
-                                        <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/>
-                                      </svg>
+                                    <img width="30" height="30" src="{{asset('assets')}}/icons/002.svg" alt="">
                                 </span>
                                 <span class="nav-link-text">Başvurular</span>
 
@@ -192,9 +189,7 @@
                             <a class="nav-link {{ request()->is('admin/onaylanan/basvurular*') ? 'active' : '' }}"
                                 href="/admin/onaylanan/basvurular">
                                 <span class="nav-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-back" viewBox="0 0 16 16">
-                                        <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/>
-                                      </svg>
+                                    <img src="{{asset('assets')}}/icons/001.svg" alt="">
                                 </span>
                                 <span class="nav-link-text">Onaylanan Başvurular</span>
 
@@ -208,11 +203,10 @@
                             <a class="nav-link {{ request()->is('admin/what-do*') ? 'active' : '' }}"
                                 href="{{ route('admin.whatdo') }}">
                                 <span class="nav-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-forward" viewBox="0 0 16 16">
-                                        <path d="M9.502 5.513a.144.144 0 0 0-.202.134V6.65a.5.5 0 0 1-.5.5H2.5v2.9h6.3a.5.5 0 0 1 .5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.51.51 0 0 1 .042-.028.147.147 0 0 0 0-.252.51.51 0 0 1-.042-.028L9.502 5.513zM8.3 5.647a1.144 1.144 0 0 1 1.767-.96l3.994 2.94a1.147 1.147 0 0 1 0 1.946l-3.994 2.94a1.144 1.144 0 0 1-1.767-.96v-.503H2a.5.5 0 0 1-.5-.5v-3.9a.5.5 0 0 1 .5-.5h6.3v-.503z"/>
-                                      </svg>
+                                    <img width="30" height="30" src="{{asset('assets')}}/icons/004.svg" alt="">
+
                                 </span>
-                                <span class="nav-link-text">Faaliyet Alanlarımız</span>
+                                <span class="nav-link-text">Duyurular</span>
                             </a>
                             <!--//nav-link-->
                         </li>

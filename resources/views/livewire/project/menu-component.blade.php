@@ -32,7 +32,7 @@
                      
                        
                         <li class="nav-item">
-                            <a class="nav-link pagescroll" href="#our-process">Kurumsal</a>
+                            <a class="nav-link pagescroll" href="#our-process">Bursluluk Başvurusu</a>
                         </li>
                         
 
@@ -40,15 +40,22 @@
                         @endif
 
                         @endforeach
-                        <li class="nav-item dropdown static">
-                            <a class="nav-link pagescroll" href="#our-apps"> Şubelerimiz </a>
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link pagescroll" href="#our-apps"> Hakkımızda </a>
                         </li>
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link pagescroll" href="#our-questions"> Sık Sorulan Sorular </a>
+                        </li>
+                        {{-- <li class="nav-item dropdown static">
+                            <a class="nav-link pagescroll" href="#our-apps"> Şubelerimiz </a>
+                        </li> --}}
                         <li class="nav-item dropdown position-relative">
                             <a class="nav-link pagescroll" href="#our-team"> Galeri </a>
                         </li>
-                        <li class="nav-item">
+                        
+                        {{-- <li class="nav-item">
                             <a class="nav-link pagescroll" href="#our-testimonial">Gözden Geçirin</a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link pagescroll" href="#stayconnect">İletişim</a>
                         </li>
@@ -76,17 +83,17 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagescroll" href="#our-process">Hakkımızda</a>
+                        <a class="nav-link pagescroll" href="#our-process">Bursluluk Başvurusu</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link pagescroll" href="#our-apps">Kurumsal</a>
-                    </li>
+               <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#our-apps">Hakkımızda</a>
+                    </li> 
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#our-team">Galeri</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link pagescroll" href="#our-testimonial">Sınavlar</a>
-                    </li>
+                 <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#our-questions">SSS</a>
+                    </li> 
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#stayconnect">İletişim</a>
                     </li>

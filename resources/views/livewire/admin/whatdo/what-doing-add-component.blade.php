@@ -3,11 +3,11 @@
 
         <div class="app-content pt-3 p-md-3 p-lg-4">
             <div class="container-xl">
-                <h1 class="app-page-title">Neler Yapıyoruz</h1>
+                <h1 class="app-page-title">Yeni Duyuru Ekle</h1>
                 <hr class="mb-4">
                 <div class="row g-4 settings-section">
                     <div class="col-12 col-md-4">
-                        <h3 class="section-title">Neler Yapıyoruz?</h3>
+                        <h3 class="section-title">Yeni Duyuru Ekle</h3>
                         <div class="section-intro">Eklemek için formu eksiksiz doldurun<a
                                 href="{{ route('admin.help') }}"><br>
                                 Daha
@@ -28,7 +28,7 @@
                             @if (Session::has('message'))
                                 <div class="alert alert-success">
                                     <strong>{{ Session::get('message') }}</strong> <a style="color: red"
-                                        href="{{ route('admin.whatdo') }}"> Neler Yapıyoruz!</a>
+                                        href="{{ route('admin.whatdo') }}"> Yeni Duyuru Ekle</a>
                                 </div>
                             @endif
                             <div class="app-card-body">

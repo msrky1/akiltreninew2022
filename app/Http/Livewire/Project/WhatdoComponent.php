@@ -3,12 +3,13 @@
 namespace App\Http\Livewire\Project;
 
 use Livewire\Component;
-
+use App\Models\Whatdo;
 class WhatdoComponent extends Component
 {
     public function render()
     {
-        return view('livewire.project.whatdo-component')->layout('layouts.base-w');
+        $whatdo = Whatdo::all();
+        return view('livewire.project.whatdo-component', ['whatdo' => $whatdo])->layout('layouts.base-w');
     }
 }
     
