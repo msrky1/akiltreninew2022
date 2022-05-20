@@ -16,8 +16,7 @@
             <div id="vertical-bullets" class="rev_slider fullwidthabanner white vertical-tpb" data-version="5.4.1">
                 <ul>
 
-
-
+                  {{-- <img class="slider-time" src="{{asset('assets/image/01.jpg')}}" alt=""> --}}
 
                     {{-- @foreach ($slider as $slide)
                     
@@ -91,12 +90,12 @@
         </ul>
     </div>
     <!--Main SLIDER END -->
-
+        
     <!--Some Services-->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3> Duyurular </h3>
+             
                 <div id="services-slider" class="owl-carousel">
 
                     @foreach ($whatdo as $wh)
@@ -104,7 +103,7 @@
                             <div class="service-box bg-{!! $wh->color !!}">
                                 <span class="bottom25">{!! $wh->icon !!} </span>
                                 <h4 class="bottom10 text-nowrap"><a href="javascript:void(0)"
-                                        class="font-22">{!! $wh->title !!} </a></h4>
+                                        class="font-10">{!! $wh->title !!} </a></h4>
                                 <p>{!! $wh->description = Str::limit($wh->description, 50) !!}</p>
                             </div>
                         </div>
@@ -112,6 +111,14 @@
 
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container">
+        <div style=" text-align: center; ">
+            
+            <img width="50" style="transform:rotate(-90deg)" src="{{asset('assets/icons')}}/arrow.gif" alt="Akıl Treni Koleji Duyurular">
+                   <h3>   DUYURULAR </h3> 
+          
         </div>
     </div>
     <!--Some Services ends-->

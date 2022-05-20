@@ -1232,6 +1232,10 @@ ul.social-icons.white li a:hover{
     margin-left: 0;
 }
 
+.slider-time {
+
+    width: 30;
+}
 
 /* transitions common*/
 
@@ -5987,3 +5991,4 @@ ul.latest_news li a:focus+span.defaultcolor {
         margin-bottom: 3rem;
     }
 }
+
