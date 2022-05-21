@@ -15,7 +15,7 @@
                     <div class="col-lg-12 col-md-12 whitecolor">
                         <h3 class="float-left">Başvuru</h3>
                         <ul class="breadcrumb top10 bottom10 float-right">
-                            <li class="breadcrumb-item hover-light"><a href="../index-logistic.html">Anasayfa</a></li>
+                            <li class="breadcrumb-item hover-light"><a href="/">Anasayfa</a></li>
                             <li class="breadcrumb-item hover-light">Başvurular</li>
                         </ul>
                     </div>

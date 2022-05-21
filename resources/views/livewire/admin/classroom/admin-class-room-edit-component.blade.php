@@ -47,6 +47,71 @@
                                     </button>
                                 </form>
 
+                                <div class="tab-content" id="orders-table-tab-content">
+                                    <div class="tab-pane fade show active" id="orders-all" role="tabpanel" aria-labelledby="orders-all-tab">
+                                        <div class="app-card app-card-orders-table shadow-sm mb-5">
+                                            <div class="app-card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table app-table-hover mb-0 text-left">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="cell">Sınav Saati</th>
+                                                           
+                                                                <th class="cell"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            @foreach ($classtime as $item)
+                                                            <tr>
+                                                            
+                                                                  
+                                                          
+                                                                <td class="cell">{{$item->hour}}</td>
+                                                        
+                                                                <td class="cell"><span class="truncate"><button class="btn btn-danger" style="color:white" wire:click.prevent="deletTime({{ $item->id }})"> Kaldır</span></td>
+                                                            </tr>
+                                                            @endforeach
+                                                            
+                                                         
+                        
+                                                        </tbody>
+                                                    </table>
+                                                </div><!--//table-responsive-->
+                                               
+                                            </div><!--//app-card-body-->		
+                                        </div><!--//app-card-->
+                                      
+                                <br> 
+                                <br> 
+                                <br> 
+                                <br> 
+
+                                <form wire:submit.prevent="addClass()">
+                                    @csrf
+                                    
+                                    <div class="mb-3">
+
+
+                                        <label for="setting-input-2" class="form-label">Sınıf Saatleri </label>:
+                                       <select wire:model="hour">
+                                         <option selected> Bir Saat Seçin </option>                           
+                                         <option> 10:00 </option>                           
+                                         <option> 13:00 </option>                           
+                                         <option> 14:00 </option>                           
+                                         <option> 16:00 </option>                           
+                                       
+                                     
+                                    
+                                       </select> <br>
+                                       <input width="1" type="text" wire:model = "classroom_id" required/> Sınıf
+                                    </div>
+                                
+
+                                    <button class="btn app-btn-primary" type="submit">
+                                        Ekle
+                                    </button>
+                                </form>
+
 
                             </div>
                             <!--//app-card-body-->

@@ -4,16 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Classtime;
 
-class Classroom extends Model
+class Classtime extends Model
 {
     use HasFactory;
-
-
-    public function getHour() {
-
-
-        return $this->hasMany(Classtime::class);
-    }
 }
