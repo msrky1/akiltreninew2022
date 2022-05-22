@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="{{asset('assets')}}/kids/css2.css">
     <link rel="stylesheet" href="{{asset('assets')}}/kids/css.css">
 
+    @livewireStyles
+
 </head>
     <body>
         <!--PreLoader-->
@@ -169,6 +171,6 @@
     <script src="{{asset('assets')}}/js/extensions/revolution.extension.video.min.js"></script>
     <!--custom functions and script-->
     <script src="{{asset('assets')}}/kids//js/functions.js"></script>
-
+     @livewireScripts
 </body>
 </html>

@@ -25,7 +25,7 @@ class BasvuruController extends Controller
       $application = Application::find($class->id);    
       $application->delete();
              
-        return  redirect()->back()->with('message' , 'Başvurunuz Başarıyla Yapıldı!');
+        return  redirect()->back()->with('message' , 'Başvurunuz Başarıyla Onaylandı!');
     }
 
     public function addApp(Request $request) {
@@ -49,6 +49,6 @@ class BasvuruController extends Controller
         $class->hour = $request->hour;
         $class->save();
 
-        return  redirect()->back()->with('message' , 'Başvurunuz Başarıyla Yapıldı!');
+        return  redirect()->route('thankyou')->with('message' , 'Başvurunuz Başarıyla Yapıldı!');
     }
 }

@@ -20,6 +20,7 @@ use App\Http\Livewire\Project\Category\CategoryDetailComponent;
 
 
 use App\Http\Livewire\Admin\AdminHomeComponent;
+use App\Http\Livewire\Project\SearchComponent;
 
 
 use App\Http\Livewire\Admin\AdminAboutComponent;
@@ -67,6 +68,7 @@ use App\Http\Livewire\Admin\Category\CategoryEditComponent;
 use App\Http\Livewire\Admin\AdminCategoryComponent;
 use App\Http\Livewire\Admin\Accept\AcceptedComponent;
 use App\Http\Livewire\Admin\Lock\LockComponent;
+use App\Http\Livewire\Project\Thanks\ThankyouComponent;
 
 
 
@@ -130,12 +132,14 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
 
-
+Route::get('/thankyou' , ThankyouComponent::class)->name('thankyou');
+Route::get('/basvurular' , SearchComponent::class );
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/logout', function () {
     return Inertia::render('/');
 })->name('logout');
 Route::post('/sinav/basvurusu' , [BasvuruController::class , 'addApp'])->name('add.basvuru');
+
 
 
 Route::get('/' , HomeComponent::class);
