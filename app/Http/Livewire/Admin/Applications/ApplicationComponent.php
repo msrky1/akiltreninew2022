@@ -19,6 +19,8 @@ class ApplicationComponent extends Component
     
         DB::table('approveds')->truncate();
         DB::table('applications')->truncate();
+        // DB::table('classrooms')->truncate();
+
 
 
   }

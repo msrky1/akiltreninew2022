@@ -17,6 +17,7 @@ class BasvuruController extends Controller
       $class->email = $request->email;
      
       $class->tc = $request->tc;
+      $class->hour = $request->hour;
          
    
       $class->save();
@@ -45,6 +46,7 @@ class BasvuruController extends Controller
         $class->tc = $request->tc;
         $class->classroom = $request->classroom;
         $class->classroom_id = $request->classroom_id;
+        $class->hour = $request->hour;
         $class->save();
 
         return  redirect()->back()->with('message' , 'Başvurunuz Başarıyla Yapıldı!');

@@ -86,23 +86,37 @@
                                     <div class="col-md-12 col-sm-12" id="result"></div>
                                     <div class="col-md-12 col-sm-12">
                                         <div class="form-group">
-                                            <label for="name1" class="d-none"></label>
+                                            <label for="name1" class="d-none">Adınız Soyadınız</label>
                                             <input class="form-control" id="name1" name="name" type="text"
                                                 placeholder="Adınız Soyadınız:" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12">
                                         <div class="form-group">
-                                            <label for="email1" class="d-none"></label>
+                                            <label for="email1" class="d-none">Email Adresiniz</label>
                                             <input class="form-control" type="email" id="email1" name="email"
                                                 placeholder="Email Adresiniz:" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12">
                                         <div class="form-group">
-                                            <label for="email1" class="d-none"></label>
+                                            <label for="email1" class="d-none">TC Kimlik Numarası</label>
                                             <input class="form-control" type="number" id="email1"
                                                 placeholder="TC Kimlik Numaranız:" name="tc" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="form-group">
+                                         Sınav Saatini Seçin
+                                            <label for="email1" class="d-none">Sınav Saati</label>
+                                             <select name="hour"> 
+                                                 @foreach ($classtime as $item)
+                                                     
+                                                 
+                                                 <option value="{{$item->hour}}">{{$item->hour}} </option>
+
+                                                 @endforeach
+                                             </select>
                                         </div>
                                     </div>
 

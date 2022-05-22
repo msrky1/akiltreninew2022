@@ -52,7 +52,7 @@
                                                 <th class="cell">Adı Soyadı</th>
                                                 <th class="cell">Email Adresi</th>
                                                 <th class="cell">TC Kimlik Numarası</th>
-                                                
+                                                <th class="cell">Sınav Saati</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -65,6 +65,7 @@
                                                             class="truncate">{{ $s->name }}</span></td>
                                                     <td class="cell">{{ $s->email }}</td>
                                                     <td class="cell">{{ $s->tc }}</td>
+                                                    <td class="cell">{{ $s->hour }}</td>
                                                   
                                                     {{-- <td class="cell"><a class="btn-sm app-btn-secondary"
                                                             href="{{ route('admin.slider.edit', ['slider_id' => $s->id]) }}">

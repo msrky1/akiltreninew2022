@@ -58,6 +58,7 @@
                                                 <th class="cell">Adı Soyadı</th>
                                                 <th class="cell">Email Adresi</th>
                                                 <th class="cell">TC Kimlik Numarası</th>
+                                                <th class="cell">Giriş Saati</th>
                                                 <th class="cell">Aksiyonlar</th>
                                                 <th class="cell"></th>
                                             </tr>
@@ -72,6 +73,7 @@
                                                             class="truncate">{{ $s->name }}</span></td>
                                                     <td class="cell">{{ $s->email }}</td>
                                                     <td class="cell">{{ $s->tc }}</td>
+                                                    <td class="cell" style="background-color: green; color:white">{{ $s->hour }}</td>
 
                                                     <td class="cell"><a class="btn-sm app-btn-secondary"
                                                             href="{{ route('admin.slider.edit', ['slider_id' => $s->id]) }}">
@@ -86,6 +88,7 @@
                                                             <input type="hidden" value="{{ $s->email }}"
                                                                 name="email">
                                                             <input type="hidden" value="{{ $s->tc }}" name="tc">
+                                                            <input type="hidden" value="{{ $s->hour }}" name="hour">
                                                             <input type="hidden" value="{{ $s->id }}" name="id">
 
 

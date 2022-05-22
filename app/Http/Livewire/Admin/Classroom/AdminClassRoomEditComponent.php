@@ -52,10 +52,10 @@ class AdminClassRoomEditComponent extends Component
             
     }
 
-    public function deletTime($id)
+    public function deletTime($classroom_id)
 
     {
-        $class = Classtime::find($id);    
+        $class = Classtime::find($classroom_id);    
         $class->delete();
     
     
