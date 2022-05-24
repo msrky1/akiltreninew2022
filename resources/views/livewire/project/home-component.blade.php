@@ -16,68 +16,111 @@
             <div id="vertical-bullets" class="rev_slider fullwidthabanner white vertical-tpb" data-version="5.4.1">
                 <ul>
 
-                  {{-- <img class="slider-time" src="{{asset('assets/image/01.jpg')}}" alt=""> --}}
+                    <section id="our-apps" class="padding">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-7 col-sm-12">
+                                    <div class="heading-title bottom30 wow fadeInLeft" data-wow-delay="200ms">
+                                        <span class="defaultcolor text-center text-md-left">Quisque tellus risus, adipisci viverra</span>
+                                        <h2 class="bottom30 darkcolor font-normal text-center text-md-left">Every Kid is Important</h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-5 col-sm-12 wow fadeInRight" data-wow-delay="200ms">
+                                    <p class="heading_space mt-n3 mt-sm-0 text-center text-md-left">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center" id="app-feature">
+                                <div class="col-lg-3 col-md-4 col-sm-12">
+                                    <div class="text-center text-md-left">
+                                        <div class="feature-item mt-1 wow fadeInLeft" data-wow-delay="200ms">
+                                            <div class="icon"><i class="fas fa-puzzle-piece"></i></div>
+                                            <div class="text">
+                                                <h4 class="bottom15">
+                                                    <span class="d-inline-block">Playing Activity</span>
+                                                </h4>
+                                                <p>This is Quisque tellus version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                                            </div>
+                                        </div>
+                                        <div class="feature-item mt-5 wow fadeInLeft" data-wow-delay="250ms">
+                                            <div class="icon"><i class="fas fa-swimmer"></i></div>
+                                            <div class="text">
+                                                <h4 class="bottom15">
+                                                    <span class="d-inline-block">Swimming</span>
+                                                </h4>
+                                                <p>This is Quisque tellus version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-4 col-sm-12 text-center">
+                                    <div class="image feature-item d-inline-block wow fadeIn my-5 my-md-0" data-wow-delay="400ms">
+                                        {{-- <img src="{{asset('assets')}}/image/01.jpg" alt="mobile phones"> --}}
+                                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <img class="d-block w-100" src="{{asset('assets')}}/image/01.jpg" alt="First slide">
+                                             
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Test</h5>
+                                                    <p>Test</p>
+                                                  </div>
+                                            </div>
+                                              <div class="carousel-item">
+                                                <img class="d-block w-100" src="{{asset('assets')}}/image/01.jpg" alt="Second slide">
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img class="d-block w-100" src="{{asset('assets')}}/image/01.jpg" alt="Third slide">
+                                              </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Next</span>
+                                            </a>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12">
+                                    <div class="text-center text-md-right">
+                                        <div class="feature-item mt-1 wow fadeInRight" data-wow-delay="200ms">
+                                            <div class="icon"><i class="fas fa-book"></i></div>
+                                            <div class="text">
+                                                <h4 class="bottom15">
+                                                    <span class="d-inline-block">Online Course</span>
+                                                </h4>
+                                                <p>This is Quisque tellus version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                                            </div>
+                                        </div>
+                                        <div class="feature-item mt-5 wow fadeInRight" data-wow-delay="250ms">
+                                            <div class="icon"><i class="fas fa-dumbbell"></i></div>
+                                            <div class="text">
+                                                <h4 class="bottom15">
+                                                    <span class="d-inline-block">Health /  Fitness</span>
+                                                </h4>
+                                                <p>This is Quisque tellus version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-                    {{-- @foreach ($slider as $slide)
-                    
-        
-             <!-- SLIDE 1 -->
-                <li data-index="rs-01" data-transition="fade" data-slotamount="default" data-easein="Power100.easeIn" data-easeout="Power100.easeOut"  data-param1="01">
-                    <!-- MAIN IMAGE -->
-                    <img src="{{asset('storage')}}/image/{{$slide->image}}"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-
-                    <div class="tp-caption tp-resizeme"
-                         data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['-90','-40','-35','-35']"
-                         data-width="none" data-height="none" data-type="text"
-                         data-textAlign="['center','center','center','center']"
-                         data-responsive_offset="on" data-start="1100"
-                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1100,"to":"o:1;","delay":0,"ease":"Power4.easeInOut"},{"delay":"wait","speed":0,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <h2 class="font-15 font-xlight slider-top-text">{{$slide->title}}</h2>
-                    </div>
-                    <!-- LAYER NR. 2 -->
-                    <div class="tp-caption tp-resizeme"
-                         data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['-25','20','20','20']"
-                         data-width="none" data-height="none" data-type="text"
-                         data-textAlign="['center','center','center','center']"
-                         data-responsive_offset="on" data-start="1100"
-                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1100,"to":"o:1;","delay":0,"ease":"Power4.easeInOut"},{"delay":"wait","speed":0,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <h1 class="font-xlight font-60 slider-middle-text"><span class="redcolor">Kids</span> <span class="bluecolor">Schooling</span></h1>
-                    </div> 
-
-                    <!-- LAYER NR. 3 -->
-                    <div class="tp-caption tp-resizeme"
-                         data-x="['left','center','center','center']" data-hoffset="['0','0','0','0']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['40','95','90','90']"
-                         data-width="none" data-height="none" data-type="text"
-                         data-textAlign="['left','center','center','center']"
-                         data-responsive_offset="on" data-start="1100"
-                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1100,"to":"o:1;","delay":0,"ease":"Power4.easeInOut"},{"delay":"wait","speed":0,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <p class="font-15 font-xlight slider-top-text">{!! $slide->description = Str::limit($slide->description, 100) !!}</p>
-                    </div>
-                    <!-- LAYER NR. 4 -->
-                    <div class="tp-caption tp-resizeme"
-                         data-x="['left','center','center','center']" data-hoffset="['0','0','0','15']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['110','170','160','170']"
-                         data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
-                         data-textAlign="['center','center','center','center']"
-                         data-responsive_offset="on" data-start="1100"
-                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1100,"to":"o:1;","delay":0,"ease":"Power4.easeInOut"},{"delay":"wait","speed":0,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'>
-                        <a href="#about-us" class="btn yellow-blue-btn rounded-pill">{{$slide->link}}</a>
-
-
-                    </div>
-                </li>
-            
-                
-                @endforeach --}}
+                 
 
                 </ul>
             </div>
 
         </div>
-
+         
         <div class="svg-slider-bottom-holder">
             <div class="svg-slider-bottom"></div>
         </div>

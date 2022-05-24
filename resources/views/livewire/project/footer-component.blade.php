@@ -41,10 +41,10 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer_panel padding_bottom_half bottom20">
-                    <h3 class="whitecolor bottom25">Bizden Haberler</h3>
+                    <h3 class="whitecolor bottom25">Blog</h3>
                     <ul class="latest_news whitecolor">
                         @foreach ($blog as $b)
-                        <li> <a href="{{$b->slug}}">{{$b->title}} </a> <span class="date defaultcolor">{{$b->created_at->diffForHumans()}}</span> </li>
+                        <li> <a href="{{route('blog.detail' , [$b->slug])}}">{{$b->title}} </a> <span class="date defaultcolor">{{$b->created_at->diffForHumans()}}</span> </li>
 
                         @endforeach
                    </ul>

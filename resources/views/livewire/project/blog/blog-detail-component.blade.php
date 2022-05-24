@@ -8,7 +8,7 @@
                     <h2 class="font-xlight heading-title-small">Akıl Treni Haber Sayfası</h2>
                     {{-- <h2 class="font-bold">Bizden Haberleri Bu Bölümden Takip Edebilirsiniz.</h2> --}}
                     {{-- <h2 class="font-xlight heading-title-small">Hakkımızda</h2> --}}
-                    <h4 class="font-light pt-2">Bizden Haberler</h4>
+                    <h4 class="font-light pt-2">Blog Sa Haberler</h4>
                 </div>
             </div>
         </div>
@@ -65,9 +65,9 @@
                             
                       
                         <div class="single_post d-table bottom15">
-                            <a href="#." class="post"><img src="{{ asset('storage/blog') }}/{{ $item->image }}" alt="{{ $item->title }}" alt="post image"></a>
+                            <a href="{{route('blog.detail' , [$item->slug])}}" class="post"><img src="{{ asset('storage/blog') }}/{{ $item->image }}" alt="{{ $item->title }}" alt="post image"></a>
                             <div class="text">
-                                <a href="#.">{{$item->title}}</a>
+                                <a href="{{route('blog.detail' , [$item->slug])}}">{{$item->title}}</a>
                                 <span>{{$item->created_at->diffForHumans()}}</span>
                             </div>
                         </div>
