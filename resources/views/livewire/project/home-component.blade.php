@@ -16,17 +16,17 @@
             <div id="vertical-bullets" class="rev_slider fullwidthabanner white vertical-tpb" data-version="5.4.1">
                 <ul>
 
-                    <section id="our-apps" class="padding">
+                    <section id="header" class="padding">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 col-md-7 col-sm-12">
                                     <div class="heading-title bottom30 wow fadeInLeft" data-wow-delay="200ms">
-                                        <span class="defaultcolor text-center text-md-left">Quisque tellus risus, adipisci viverra</span>
-                                        <h2 class="bottom30 darkcolor font-normal text-center text-md-left">Every Kid is Important</h2>
+                                       
+                                        <h2 class="bottom30 darkcolor font-normal text-center text-md-left">Akıl Treni Koleji</h2>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-5 col-sm-12 wow fadeInRight" data-wow-delay="200ms">
-                                    <p class="heading_space mt-n3 mt-sm-0 text-center text-md-left">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>
+                                    <p class="heading_space mt-n3 mt-sm-0 text-center text-md-left"></p>
                                 </div>
                             </div>
                             <div class="row d-flex align-items-center" id="app-feature">
@@ -36,56 +36,75 @@
                                             <div class="icon"><i class="fas fa-puzzle-piece"></i></div>
                                             <div class="text">
                                                 <h4 class="bottom15">
-                                                    <span class="d-inline-block">Playing Activity</span>
+                                                    <span class="d-inline-block">Sınan Başvuruları</span>
                                                 </h4>
-                                                <p>This is Quisque tellus version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                                                <p>Sınav Başvurularını bu bölümden yapabilirsiniz.</p>
                                             </div>
                                         </div>
                                         <div class="feature-item mt-5 wow fadeInLeft" data-wow-delay="250ms">
                                             <div class="icon"><i class="fas fa-swimmer"></i></div>
                                             <div class="text">
                                                 <h4 class="bottom15">
-                                                    <span class="d-inline-block">Swimming</span>
+                                                    <span class="d-inline-block">Aktiviteler</span>
                                                 </h4>
-                                                <p>This is Quisque tellus version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                                                <p>Satranç, Futbol, Basketbol</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-4 col-sm-12 text-center">
-                                    <div class="image feature-item d-inline-block wow fadeIn my-5 my-md-0" data-wow-delay="400ms">
+                                    <div class="image feature-item d-inline-block wow fadeIn my-5 my-md-0"
+                                        data-wow-delay="400ms">
                                         {{-- <img src="{{asset('assets')}}/image/01.jpg" alt="mobile phones"> --}}
                                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                             <ol class="carousel-indicators">
-                                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                                    class="active"></li>
+
+                                                    @foreach ($slider as $item)
+                                                        
+                                             
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="{{$item->id}}"></li>
+                                                @endforeach
                                             </ol>
                                             <div class="carousel-inner">
-                                              <div class="carousel-item active">
-                                                <img class="d-block w-100" src="{{asset('assets')}}/image/01.jpg" alt="First slide">
-                                             
-                                                <div class="carousel-caption d-none d-md-block">
-                                                    <h5>Test</h5>
-                                                    <p>Test</p>
-                                                  </div>
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="{{ asset('assets') }}/image/01.jpg"
+                                                        alt="First slide">
+
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        
+                                                    </div>
+                                                </div>
+                                                @foreach ($slider as $item)
+                                                    
+                                       
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="{{ asset('storage') }}/image/{{$item->image}}"
+                                                        alt="Second slide">
+
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5 style="background-color: black; border-radius:50px; padding:10;">{{$item->title}}
+                                                                {!!$item->description !!}</h5>
+                                                         
+                                                          <a href="{{$item->description}}" >   <button type="submit" class="btn yellow-blue-btn rounded-pill  w-100" id="submit_btn">Detay</button> </a>
+
+                                                        </div>
+                                                </div>
+                                                @endforeach
+                                                
                                             </div>
-                                              <div class="carousel-item">
-                                                <img class="d-block w-100" src="{{asset('assets')}}/image/01.jpg" alt="Second slide">
-                                              </div>
-                                              <div class="carousel-item">
-                                                <img class="d-block w-100" src="{{asset('assets')}}/image/01.jpg" alt="Third slide">
-                                              </div>
-                                            </div>
-                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                              <span class="sr-only">Previous</span>
+                                            <a class="carousel-control-prev" href="#carouselExampleIndicators"
+                                                role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Geri</span>
                                             </a>
-                                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                              <span class="sr-only">Next</span>
+                                            <a class="carousel-control-next" href="#carouselExampleIndicators"
+                                                role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">İleri</span>
                                             </a>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-12">
@@ -94,18 +113,18 @@
                                             <div class="icon"><i class="fas fa-book"></i></div>
                                             <div class="text">
                                                 <h4 class="bottom15">
-                                                    <span class="d-inline-block">Online Course</span>
+                                                    <span class="d-inline-block">Duyurular</span>
                                                 </h4>
-                                                <p>This is Quisque tellus version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                                                <p>Akıl Treni Koleji Duyurular</p>
                                             </div>
                                         </div>
                                         <div class="feature-item mt-5 wow fadeInRight" data-wow-delay="250ms">
-                                            <div class="icon"><i class="fas fa-dumbbell"></i></div>
+                                            <div class="icon"><i class="fas fa-address-book"></i></div>
                                             <div class="text">
                                                 <h4 class="bottom15">
-                                                    <span class="d-inline-block">Health /  Fitness</span>
+                                                    <span class="d-inline-block">İletişim</span>
                                                 </h4>
-                                                <p>This is Quisque tellus version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                                                <p>Bizimle İletişime Geçşin</p>
                                             </div>
                                         </div>
                                     </div>
@@ -114,13 +133,13 @@
                         </div>
                     </section>
 
-                 
+
 
                 </ul>
             </div>
 
         </div>
-         
+
         <div class="svg-slider-bottom-holder">
             <div class="svg-slider-bottom"></div>
         </div>
@@ -133,23 +152,26 @@
         </ul>
     </div>
     <!--Main SLIDER END -->
-        
+
     <!--Some Services-->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-             
+
                 <div id="services-slider" class="owl-carousel">
 
                     @foreach ($whatdo as $wh)
-                        <div class="item">
+                       <div class="item">
                             <div class="service-box bg-{!! $wh->color !!}">
-                                <span class="bottom25">{!! $wh->icon !!} </span>
-                                <h4 class="bottom10 text-nowrap"><a href="javascript:void(0)"
+                        <span class="bottom25">{!! $wh->icon !!} </span>
+                                <h4 class="bottom10 text-nowrap"><a  href="{{route('whatdo.detail' , [ $wh->slug ])}}"
                                         class="font-10">{!! $wh->title !!} </a></h4>
                                 <p>{!! $wh->description = Str::limit($wh->description, 50) !!}</p>
+                                <a  href="{{route('whatdo.detail' , [ $wh->slug ])}}"
+                                    class="font-10">          <button class="btn btn-success" >Detay</button></a>
                             </div>
-                        </div>
+                  
+                        </div> 
                     @endforeach
 
                 </div>
@@ -158,10 +180,11 @@
     </div>
     <div class="container">
         <div style=" text-align: center; ">
-            
-            <img width="50" style="transform:rotate(-90deg)" src="{{asset('assets/icons')}}/arrow.gif" alt="Akıl Treni Koleji Duyurular">
-                   <h3>   DUYURULAR </h3> 
-          
+
+            <img width="50" style="transform:rotate(-90deg)" src="{{ asset('assets/icons') }}/arrow.gif"
+                alt="Akıl Treni Koleji Duyurular">
+            <h3> DUYURULAR </h3>
+
         </div>
     </div>
     <!--Some Services ends-->
@@ -219,7 +242,7 @@
         @endif
     @endforeach
 
-    
+
     <!--WOrk Process ends-->
     <!-- Mobile Apps -->
     {{-- <section id="our-apps" class="padding">
@@ -332,24 +355,28 @@
             <div class="row">
                 <div class="col-lg-6 col-md-7 col-sm-12">
                     <div class="heading-title bottom30 wow fadeInLeft" data-wow-delay="200ms">
-                        <span class="defaultcolor text-center text-md-left">@foreach ($about as $item)
-                        {{$item->title}}
-                            @endforeach</span>
-                        <h2 class="bottom30 darkcolor font-normal text-center text-md-left"> @foreach ($about as $item)
-                           {{$item->title_one}}
-                            @endforeach  </h2>
+                        <span class="defaultcolor text-center text-md-left">
+                            @foreach ($about as $item)
+                                {{ $item->title }}
+                            @endforeach
+                        </span>
+                        <h2 class="bottom30 darkcolor font-normal text-center text-md-left">
+                            @foreach ($about as $item)
+                                {{ $item->title_one }}
+                            @endforeach
+                        </h2>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-5 col-sm-12 wow fadeInRight" data-wow-delay="200ms">
                     <p class="heading_space mt-n3 mt-sm-0 text-center text-md-left">
-                        
+
                         @foreach ($about as $item)
-                        <p>{{$item->description}}</p>
+                            <p>{{ $item->description }}</p>
                         @endforeach
-                     
+
                 </div>
             </div>
-      
+
         </div>
     </section>
 
@@ -359,20 +386,20 @@
                 <div class="col-lg-6 col-md-7 col-sm-12">
                     <div class="heading-title bottom30 wow fadeInLeft" data-wow-delay="200ms">
                         <span class="defaultcolor text-center text-md-left">Akıl Treni Koleji</span>
-                        <h2 class="bottom30 darkcolor font-normal text-center text-md-left">  Sık Sorulan Sorular </h2>
+                        <h2 class="bottom30 darkcolor font-normal text-center text-md-left"> Sık Sorulan Sorular </h2>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-5 col-sm-12 wow fadeInRight" data-wow-delay="200ms">
                     <p class="heading_space mt-n3 mt-sm-0 text-center text-md-left">
-                        
+
                         @foreach ($questions as $item)
-                        <h3>{{$item->title}}</h3>
-                        <p>{{$item->description}}</p>
+                            <h3>{{ $item->title }}</h3>
+                            <p>{{ $item->description }}</p>
                         @endforeach
-                     
+
                 </div>
             </div>
-      
+
         </div>
     </section>
     <!-- Our Team-->
@@ -386,7 +413,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="200ms">
-                  
+
                 </div>
             </div>
             <div class="row">

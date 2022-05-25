@@ -3,7 +3,7 @@
         <div class="svg-footer-top"></div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row" >
             @foreach ($setting  as $s)
                 
           

@@ -1,6 +1,6 @@
 <div class="banner-area">
     <div class="container">
-        <div class="row">
+        <div class="row" style="background-image: url({{asset('assets/image/0012.jpg')}});">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="main-bennar">
                     <h2>İş Ortaklarımız</h2>

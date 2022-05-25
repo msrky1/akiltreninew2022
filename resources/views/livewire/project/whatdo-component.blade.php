@@ -2,15 +2,14 @@
     <!--Page Header-->
     <section id="main-banner-page" class="position-relative page-header contact-header section-nav-smooth parallax">
        <div class="container">
-           <div class="row">
-                           <div class="container">
-           <div class="row">
+           <div class="row" style="background-image: url({{asset('assets/image/0012.jpg')}});">
+                        
                <div class="col-lg-8 offset-lg-2">
                    <div class="page-titles whitecolor text-center padding_top padding_bottom">
-                       <h2 class="font-xlight heading-title-small">Akıl Treni Duyurular</h2>
+                    
                        <h2 class="font-bold"> Duyurularımızı Burdan Takip Edebilirsiniz</h2>
                        {{-- <h2 class="font-xlight heading-title-small">Hakkımızda</h2> --}}
-                       <h4 class="font-light pt-2">Duyurular</h4>
+                   
                    </div>
                </div>
            </div>

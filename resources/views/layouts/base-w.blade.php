@@ -49,7 +49,7 @@
                                 <a class="nav-link" href="/">Anasayfa</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/basvurular">Başvuru</a>
+                                <a class="nav-link" href="/basvurular">Sınav Giriş Belgesi</a>
                             </li>
                            
                             <li class="nav-item">
