@@ -89,6 +89,9 @@
                         <a class="nav-link pagescroll" href="#our-apps">Hakkımızda</a>
                     </li> 
                     <li class="nav-item">
+                        <a class="nav-link pagescroll" href="/haberler">Bizden Haberler</a>
+                    </li> 
+                    <li class="nav-item">
                         <a class="nav-link pagescroll" href="#our-team">Galeri</a>
                     </li>
                  <li class="nav-item">

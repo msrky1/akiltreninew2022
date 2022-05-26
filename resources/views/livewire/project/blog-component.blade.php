@@ -6,10 +6,10 @@
                       
                 <div class="col-lg-8 offset-lg-2">
                     <div class="page-titles whitecolor text-center padding_top padding_bottom">
-                        <h2 class="font-xlight heading-title-small">Akıl Treni Haber Sayfası</h2>
+                     
                         <h2 class="font-bold">Bizden Haberleri Bu Bölümden Takip Edebilirsiniz.</h2>
                         {{-- <h2 class="font-xlight heading-title-small">Hakkımızda</h2> --}}
-                        <h4 class="font-light pt-2">Bizden Haberler</h4>
+
                     </div>
                 </div>
             </div>

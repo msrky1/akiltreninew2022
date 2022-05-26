@@ -33,12 +33,13 @@
                                 <div class="col-lg-3 col-md-4 col-sm-12">
                                     <div class="text-center text-md-left">
                                         <div class="feature-item mt-1 wow fadeInLeft" data-wow-delay="200ms">
-                                            <div class="icon"><i class="fas fa-puzzle-piece"></i></div>
+                                         <a  href="#our-process" >  <div class="icon"><i class="fas fa-puzzle-piece"></i></div>
                                             <div class="text">
                                                 <h4 class="bottom15">
                                                     <span class="d-inline-block">Sınan Başvuruları</span>
                                                 </h4>
-                                                <p>Sınav Başvurularını bu bölümden yapabilirsiniz.</p>
+                                                <p>Sınav Başvurularını bu bölümden yapabilirsiniz.</p> </a>
+                                    
                                             </div>
                                         </div>
                                         <div class="feature-item mt-5 wow fadeInLeft" data-wow-delay="250ms">
@@ -110,21 +111,21 @@
                                 <div class="col-lg-3 col-md-4 col-sm-12">
                                     <div class="text-center text-md-right">
                                         <div class="feature-item mt-1 wow fadeInRight" data-wow-delay="200ms">
-                                            <div class="icon"><i class="fas fa-book"></i></div>
+                                            <a href="/duyurular" >       <div class="icon"><i class="fas fa-book"></i></div>
                                             <div class="text">
                                                 <h4 class="bottom15">
-                                                    <span class="d-inline-block">Duyurular</span>
+                                            <span class="d-inline-block">Duyurular</span>
                                                 </h4>
-                                                <p>Akıl Treni Koleji Duyurular</p>
-                                            </div>
+                                                <p>Akıl Treni Koleji Duyurular</p> </a>
+                                            </div> 
                                         </div>
                                         <div class="feature-item mt-5 wow fadeInRight" data-wow-delay="250ms">
-                                            <div class="icon"><i class="fas fa-address-book"></i></div>
+                                            <a href="/iletisim" >    <div class="icon"><i class="fas fa-address-book"></i></div>
                                             <div class="text">
                                                 <h4 class="bottom15">
                                                     <span class="d-inline-block">İletişim</span>
                                                 </h4>
-                                                <p>Bizimle İletişime Geçşin</p>
+                                                <p>Bizimle İletişime Geçşin</p> </a>
                                             </div>
                                         </div>
                                     </div>

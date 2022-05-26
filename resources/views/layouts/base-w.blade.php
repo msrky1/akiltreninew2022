@@ -98,7 +98,7 @@
                                     <ul class="navbar-nav">
                                         
                                         <li class="nav-item">
-                                            <a class="nav-link" href="/blog">Blog</a>
+                                            <a class="nav-link" href="/haberler">Haberler</a>
                                         </li>
                                        
                                     </ul>

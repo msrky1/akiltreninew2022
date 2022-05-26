@@ -10,8 +10,7 @@
             <div class="row" style="background-image: url({{asset('assets/image/0012.jpg')}});" >
                 <div class="col-lg-6 offset-lg-3">
                     <div class="page-titles whitecolor text-center padding" >
-                        <h2 style="background-color: rgba(19, 25, 62, 0.438); " class="font-bold"> Başvuru</h2>
-                        <h3 style="background-color: black; " class="font-light py-2">Bursluluk Sınavı İçin Başvuru Formunu Doldurunuz.</h3>
+                       
                     </div>
                 </div>
             </div>
