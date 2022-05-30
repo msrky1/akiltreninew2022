@@ -9,7 +9,7 @@
            
                 </div>
             </div>
-        </div>
+        </div>  
         <div class="gradient-bg title-wrap mt-n5">
             <div class="row">
                 <div class="col-lg-12 col-md-12 whitecolor">

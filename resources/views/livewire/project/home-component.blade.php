@@ -226,7 +226,7 @@
                                     <a href="{{ route('class.detail', ['classroom_id' => $cla->classroom_id]) }}">
                                         <button style="border-radius: 15px; padding:10px; color:green">Başvur</button>
                                     </a>
-                                    <a href="aa">
+                                    <a href="{{ route('class.detail', ['classroom_id' => $cla->classroom_id]) }}">
                                         <p class="fontbold bottom20">{{ $cla->classroom }}</p>
                                     </a>
                                     <p class="mt-n2 mt-sm-0">Lütfen Sınıf Seçin</p>

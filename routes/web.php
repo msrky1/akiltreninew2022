@@ -134,6 +134,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::get('/thankyou' , ThankyouComponent::class)->name('thankyou');
 Route::get('/basvurular' , SearchComponent::class );
+Route::get('/basvurular/olustur' , [BasvuruController::class, 'pdfGenerate' ])->name('generate');
+Route::get('/basvurular/table' , [BasvuruController::class, 'table' ])->name('generate.table');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/logout', function () {
     return Inertia::render('/');

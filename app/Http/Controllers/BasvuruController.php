@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Application;
 use App\Models\Approved;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class BasvuruController extends Controller
 { 
@@ -26,6 +27,27 @@ class BasvuruController extends Controller
       $application->delete();
              
         return  redirect()->back()->with('message' , 'Başvurunuz Başarıyla Onaylandı!');
+    }
+
+    public function pdfGenerate() {
+
+
+        $pdf = PDF::loadView('pdf.user');
+        return $pdf->stream('user.pdf');
+
+
+
+
+    }
+
+    public function table() {
+
+
+         return view('pdf.user');
+
+       
+
+
     }
 
     public function addApp(Request $request) {

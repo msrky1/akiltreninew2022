@@ -105,8 +105,9 @@
                          
                         </table>
                                            
-                       <br> <button class="btn btn-success" wire:click.prevent="pdfReturn"> Sınav Giriş Belgesini Çıkartın </button>  
-                     
+                       <br> <a href=" {{ route('generate.table') }}" > <button class="btn btn-success"> Sınav Giriş Belgesini Çıkartın </button>  
+                       <br> <a href=" {{ route('generate') }}" > <button class="btn btn-success"> Pdf </button>  
+                      </a>
                            @endforeach
                        @else
                            <div class="col-sm-6 col-lg-4">
