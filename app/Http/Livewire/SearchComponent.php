@@ -10,6 +10,9 @@ class SearchComponent extends Component
 {
     public $query;
     public $approved;
+    public $tc;
+
+
 
 
 
@@ -20,11 +23,16 @@ class SearchComponent extends Component
         $this->approved = [];
     }
 
-
-
+    
     public function updatedQuery(){
 
+        $validate = [
 
+            'tc' => 'required|max:11',
+
+
+        ];
+        
          $this->approved = Approved::where('tc' , 'like' , '%' . $this->query . '%')
          
          ->get()
@@ -33,11 +41,23 @@ class SearchComponent extends Component
 
     }
 
-    public function pdfReturn () {
+    public function pdfGenerate() {
 
-          return redirect()->back();
+          
+        return redirect()->back();
+        
+         
+        //  $pdf = PDF::loadView('pdf.user', compact('item'));
+        //  return $pdf->stream('user.pdf');
+
+      
+                       
+
 
     }
+
+   
+ 
     public function render()
     {
         return view('livewire.search-component')->layout('layouts.base-w');

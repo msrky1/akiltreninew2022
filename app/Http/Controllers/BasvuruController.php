@@ -25,20 +25,11 @@ class BasvuruController extends Controller
     
       $application = Application::find($class->id);    
       $application->delete();
-             
-        return  redirect()->back()->with('message' , 'Başvurunuz Başarıyla Onaylandı!');
+    
+      return  redirect()->back()->with('message' , 'Başvurunuz Başarıyla Onaylandı!');
     }
 
-    public function pdfGenerate() {
-
-
-        $pdf = PDF::loadView('pdf.user');
-        return $pdf->stream('user.pdf');
-
-
-
-
-    }
+ 
 
     public function table() {
 
@@ -72,5 +63,18 @@ class BasvuruController extends Controller
         $class->save();
 
         return  redirect()->route('thankyou')->with('message' , 'Başvurunuz Başarıyla Yapıldı!');
+    }
+
+
+    public function pdfGenerate($name) {
+
+
+        
+        $posts = Approved::where('name' , $name)->first() ?? abort(403,'Kayboldun Sanırım');
+        $data['approved'] = $posts;
+        $pdf = PDF::loadView('pdf.user', $data);
+        return $pdf->stream('invoice.pdf');
+       
+
     }
 }

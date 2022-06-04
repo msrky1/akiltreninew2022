@@ -134,13 +134,13 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::get('/thankyou' , ThankyouComponent::class)->name('thankyou');
 Route::get('/basvurular' , SearchComponent::class );
-Route::get('/basvurular/olustur' , [BasvuruController::class, 'pdfGenerate' ])->name('generate');
-Route::get('/basvurular/table' , [BasvuruController::class, 'table' ])->name('generate.table');
+// Route::get('/basvurular/olustur/{name}' , [BasvuruController::class, 'pdfGenerate' ])->name('generate');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/logout', function () {
     return Inertia::render('/');
 })->name('logout');
 Route::post('/sinav/basvurusu' , [BasvuruController::class , 'addApp'])->name('add.basvuru');
+Route::post('/sinav/basvurusu/olustur/{name}' , [BasvuruController::class , 'pdfGenerate'])->name('generate.pdf');
 
 
 

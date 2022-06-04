@@ -40,7 +40,7 @@
                        </div>
                        <form action="GET" >
                            @csrf
-                        <input width="200" type="number" name="search" placeholder="Tc Kimlik Numarası" wire:model.debounce.3000ms ="query">
+                        <input onkeydown="return event.key != 'Enter';"  width="200" type="number" name="search" placeholder="Tc Kimlik Numarası" wire:model.debounce.3000ms ="query">
                     
 
                        </form>
@@ -104,10 +104,30 @@
                           </tr>
                          
                         </table>
+                      
+
+                               
+
+                             
+                        
+                       <br>
+
+                       <form action="{{route('generate.pdf' , $item['name'])}}" enctype="multipart/form-data" method="POST">
+                    
+                        @error('name') <span class="error">{{ $message }}</span> @enderror
+
+                         @csrf
+                        <button  class="btn btn-success"> Sınav Giriş Belgesini Al </button>  
+
+                    
+                    
+                        </form>
+                       
+                       
+
+             
                                            
-                       <br> <a href=" {{ route('generate.table') }}" > <button class="btn btn-success"> Sınav Giriş Belgesini Çıkartın </button>  
-                       <br> <a href=" {{ route('generate') }}" > <button class="btn btn-success"> Pdf </button>  
-                      </a>
+                    
                            @endforeach
                        @else
                            <div class="col-sm-6 col-lg-4">
@@ -137,3 +157,14 @@
         </div>
     </section>
 </main>
+<script>
+
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+</script>
