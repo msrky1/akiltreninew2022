@@ -1,4 +1,4 @@
-<footer id="site-footer" class="position-relative bg-red padding_top">
+<footer id="site-footer" class="position-relative bg-black padding_top">
     <div class="svg-footer-top-holder">
         <div class="svg-footer-top"></div>
     </div>
@@ -9,7 +9,7 @@
           
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer_panel padding_bottom_half bottom20">
-                    <a href="index-kids.html" class="footer_logo bottom25"><img src="{{asset('assets')}}/kids/images/logo-white.png" alt="MegaOne"></a>
+                    <a href="/" ><img src="{{asset('assets')}}/image/01.jpg" alt="Akıl Treni Koleji"></a>
                     <p class="whitecolor bottom25">{{$s->address}}</p>
                     <div class="d-table w-100 address-item whitecolor bottom25">
                         <span class="d-table-cell align-middle"><i class="fas fa-mobile-alt"></i></span>

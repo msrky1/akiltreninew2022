@@ -153,12 +153,12 @@ Route::get('/sss' , QuestionsComponent::class);
  Route::get('/haberler' , BlogComponent::class);
  Route::get('/iletisim' , ContactComponent::class);
  Route::get('/is-ortaklarimiz' , BusinessPartnerComponent::class);
- Route::get('/class/detail/{classroom_id}' , ClassDetailComponent::class)->name('class.detail');
+ Route::get('/sinif/detay/{classroom_id}' , ClassDetailComponent::class)->name('class.detail');
 
 
   Route::get('/duyuru/{slug}', WhatdoDetailComponent::class)->name('whatdo.detail');
-  Route::get('/blog/{slug}', BlogDetailComponent::class)->name('blog.detail');
-  Route::get('/category/{category_slug}', CategoryDetailComponent::class)->name('blog.category');
+  Route::get('/haber/{slug}', BlogDetailComponent::class)->name('blog.detail');
+  Route::get('/kategori/{category_slug}', CategoryDetailComponent::class)->name('blog.category');
 
 
   Route::post('/sinav/basvurusu/onayla' , [BasvuruController::class , 'addApprow'])->name('add.basvuru.onay');

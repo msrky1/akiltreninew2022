@@ -5,15 +5,14 @@
                 <div class="row" style="background-image: url({{asset('assets/image/0012.jpg')}});">
                     <div class="col-lg-6 offset-lg-3">
                         <div class="page-titles whitecolor text-center padding">
-                            <h2 class="font-bold"> İletişim</h2>
-                            <h3 class="font-light py-2">İletişim Nunumaralarımızdan Bizlere Ulaşabilirsiniz</h3>
+                          
                         </div>
                     </div>
                 </div>
                 <div class="gradient-bg title-wrap mt-n5">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 whitecolor">
-                            <h3 class="float-left">Başvuru</h3>
+                            <h3 class="float-left">İletişim</h3>
                             <ul class="breadcrumb top10 bottom10 float-right">
                                 <li class="breadcrumb-item "><a href="/">Anasayfa</a></li>
                                 <li class="breadcrumb-item ">İletişim</li>
@@ -46,7 +45,7 @@
                                     <h2 class="darkcolor font-normal mb-4">{{$item->name}}</h2>
                                     <h3 class="darkcolor font-normal mb-4">{{$item->contact}}</h3>
                                     <h3 class="darkcolor font-normal mb-4">Whatsapp: {{$item->whatsapp}}</h3>
-                                    <h3 class="darkcolor font-normal mb-4">Address: {{$item->address}}</h3>
+                                    <h3 class="darkcolor font-normal mb-4">Adres: {{$item->address}}</h3>
                                     @endforeach
                                 </div>
                                 

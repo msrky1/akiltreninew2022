@@ -3,8 +3,8 @@
         <div class="row" style="background-image: url({{asset('assets/image/0012.jpg')}});">
             <div class="col-lg-6 offset-lg-3">
                 <div class="page-titles whitecolor text-center padding">
-                    <h2 class="font-bold"> Galeri</h2>
-                    <h3 class="font-light py-2">Galeri</h3>
+                    {{-- <h2 class="font-bold"> Galeri</h2>
+                    <h3 class="font-light py-2">Galeri</h3> --}}
                 </div>
             </div>
         </div>

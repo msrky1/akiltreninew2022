@@ -4,7 +4,6 @@
             <div class="col-lg-6 offset-lg-3">
                 <div class="page-titles whitecolor text-center padding"><br>
           
-                      <h3 class="font-bold"  style="background-color: rgba(19, 25, 62, 0.656); "> Hakkımızda
                     </h3>
            
                 </div>
@@ -31,7 +30,7 @@
     <div class="container aboutus">
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-5 padding_bottom_half">
-                <div class="image"><img alt="SEO" src="{{asset('assets')}}/image/about.jpg"></div>
+                <div class="image"><img alt="SEO" src="{{asset('assets')}}/image/01.jpg"></div>
             </div>
             <div class="col-lg-6 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
                 <h2 class="darkcolor font-normal bottom30">{{$item->title}} <span class="defaultcolor">{{$item->title_one}}</span> </h2>

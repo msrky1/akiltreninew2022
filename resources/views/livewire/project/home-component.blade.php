@@ -21,9 +21,9 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-7 col-sm-12">
                                     <div class="heading-title bottom30 wow fadeInLeft" data-wow-delay="200ms">
-
-                                        <h2 class="bottom30 darkcolor font-normal text-center text-md-left">Akıl Treni
-                                            Koleji</h2>
+                                        <img src="{{asset('assets')}}/kids/images/logo-white.png" alt="logo" class="logo-img">
+                                        
+                                            
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-5 col-sm-12 wow fadeInRight" data-wow-delay="200ms">
@@ -53,10 +53,10 @@
                                     <div class="feature-item mt-5 wow fadeInLeft" data-wow-delay="250ms">
                                         <div class="icon"><i class="fas fa-newspaper"></i></div>
                                         <div class="text">
-                                            <h4 class="bottom15">
+                                      <a href="/haberler" >    <h4 class="bottom15">
                                                 <span class="d-inline-block">Haberler</span>
                                             </h4>
-                                            <p>Bizden Haberler</p>
+                                            <p>Bizden Haberler</p> </a>
                                         </div>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@
     <!-- WOrk Process-->
     @foreach ($lock as $item)
         @if ($item->lock == 'Açık')
-            <section id="our-process" class="padding bg-red">
+            <section id="our-process" class="padding bg-bluen-mat">
                 <div class="svg-process-top-holder">
                     <div class="svg-process-top"></div>
                 </div>
@@ -238,7 +238,7 @@
                                 <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
                                     <span class="pro-step bottom20"> {{ $cla->classroom_id }} </span>
                                     <a href="{{ route('class.detail', ['classroom_id' => $cla->classroom_id]) }}">
-                                        <button style="border-radius: 15px; padding:10px; color:green">Başvur</button>
+                                        <button class="basvuru-btn">Başvur</button>
                                     </a>
                                     <a href="{{ route('class.detail', ['classroom_id' => $cla->classroom_id]) }}">
                                         <p class="fontbold bottom20">{{ $cla->classroom }}</p>
