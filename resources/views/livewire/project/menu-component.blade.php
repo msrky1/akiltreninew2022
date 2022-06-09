@@ -1,4 +1,4 @@
-<header class="site-header" id="header">
+<header class="site-header" id="header" lang="tr">
     <nav class="navbar navbar-expand-lg transparent-bg static-nav ">
         <div class="color-lines d-block">
 
@@ -35,7 +35,11 @@
                             <a class="nav-link pagescroll" href="#our-process">Bursluluk Başvurusu</a>
                         </li>
                         
+                       @else 
 
+                       <li class="nav-item">
+                        <a class="nav-link pagescroll" href="#our-process">Sınav Giriş Belgesi</a>
+                          </li>
 
                         @endif
 
@@ -82,9 +86,17 @@
                       Anasayfa
                         </a>
                     </li>
+                    @foreach ($lock as $item)
+                        
+                     @if ($item->lock == 'Açık')
+                         
+                 
                     <li class="nav-item">
                         <a class="nav-link pagescroll" href="#our-process">Bursluluk Başvurusu</a>
                     </li>
+
+                    @endif
+                    @endforeach
                <li class="nav-item">
                         <a class="nav-link pagescroll" href="#our-apps">Hakkımızda</a>
                     </li> 

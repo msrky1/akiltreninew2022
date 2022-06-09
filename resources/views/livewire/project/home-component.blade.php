@@ -21,8 +21,9 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-7 col-sm-12">
                                     <div class="heading-title bottom30 wow fadeInLeft" data-wow-delay="200ms">
-                                       
-                                        <h2 class="bottom30 darkcolor font-normal text-center text-md-left">Akıl Treni Koleji</h2>
+
+                                        <h2 class="bottom30 darkcolor font-normal text-center text-md-left">Akıl Treni
+                                            Koleji</h2>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-5 col-sm-12 wow fadeInRight" data-wow-delay="200ms">
@@ -32,125 +33,138 @@
                             <div class="row d-flex align-items-center" id="app-feature">
                                 <div class="col-lg-3 col-md-4 col-sm-12">
                                     <div class="text-center text-md-left">
-                                        <div class="feature-item mt-1 wow fadeInLeft" data-wow-delay="200ms">
-                                         <a  href="#our-process" >  <div class="icon"><i class="fas fa-puzzle-piece"></i></div>
-                                            <div class="text">
-                                                <h4 class="bottom15">
-                                                    <span class="d-inline-block">Sınan Başvuruları</span>
-                                                </h4>
-                                                <p>Sınav Başvurularını bu bölümden yapabilirsiniz.</p> </a>
-                                    
-                                            </div>
-                                        </div>
-                                        <div class="feature-item mt-5 wow fadeInLeft" data-wow-delay="250ms">
-                                            <div class="icon"><i class="fas fa-swimmer"></i></div>
-                                            <div class="text">
-                                                <h4 class="bottom15">
-                                                    <span class="d-inline-block">Aktiviteler</span>
-                                                </h4>
-                                                <p>Satranç, Futbol, Basketbol</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-4 col-sm-12 text-center">
-                                    <div class="image feature-item d-inline-block wow fadeIn my-5 my-md-0"
-                                        data-wow-delay="400ms">
-                                        {{-- <img src="{{asset('assets')}}/image/01.jpg" alt="mobile phones"> --}}
-                                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                                    class="active"></li>
-
-                                                    @foreach ($slider as $item)
-                                                        
-                                             
-                                                <li data-target="#carouselExampleIndicators" data-slide-to="{{$item->id}}"></li>
-                                                @endforeach
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100" src="{{ asset('assets') }}/image/01.jpg"
-                                                        alt="First slide">
-
-                                                    <div class="carousel-caption d-none d-md-block">
-                                                        
-                                                    </div>
-                                                </div>
-                                                @foreach ($slider as $item)
-                                                    
-                                       
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src="{{ asset('storage') }}/image/{{$item->image}}"
-                                                        alt="Second slide">
-
-                                                        <div class="carousel-caption d-none d-md-block">
-                                                            <h5 style="background-color: black; border-radius:50px; padding:10;">{{$item->title}}
-                                                                {!!$item->description !!}</h5>
-                                                         
-                                                          <a href="{{$item->description}}" >   <button type="submit" class="btn yellow-blue-btn rounded-pill  w-100" id="submit_btn">Detay</button> </a>
-
+                                        @foreach ($lock as $item)
+                                            @if ($item->lock == 'Açık')
+                                                <div class="feature-item mt-1 wow fadeInLeft" data-wow-delay="200ms">
+                                                    <a href="#our-process">
+                                                        <div class="icon"><i class="fas fa-puzzle-piece"></i>
                                                         </div>
+                                                        <div class="text">
+                                                            <h4 class="bottom15">
+                                                                <span class="d-inline-block">Sınan Başvuruları</span>
+                                                            </h4>
+                                                            <p>Sınav Başvurularını bu bölümden yapabilirsiniz.</p>
+                                                    </a>
+
                                                 </div>
-                                                @endforeach
-                                                
-                                            </div>
-                                            <a class="carousel-control-prev" href="#carouselExampleIndicators"
-                                                role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Geri</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselExampleIndicators"
-                                                role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">İleri</span>
-                                            </a>
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-sm-12">
-                                    <div class="text-center text-md-right">
-                                        <div class="feature-item mt-1 wow fadeInRight" data-wow-delay="200ms">
-                                            <a href="/duyurular" >       <div class="icon"><i class="fas fa-book"></i></div>
-                                            <div class="text">
-                                                <h4 class="bottom15">
-                                            <span class="d-inline-block">Duyurular</span>
-                                                </h4>
-                                                <p>Akıl Treni Koleji Duyurular</p> </a>
-                                            </div> 
-                                        </div>
-                                        <div class="feature-item mt-5 wow fadeInRight" data-wow-delay="250ms">
-                                            <a href="/iletisim" >    <div class="icon"><i class="fas fa-address-book"></i></div>
-                                            <div class="text">
-                                                <h4 class="bottom15">
-                                                    <span class="d-inline-block">İletişim</span>
-                                                </h4>
-                                                <p>Bizimle İletişime Geçşin</p> </a>
-                                            </div>
+                                    @endif
+                                    @endforeach
+                                    <div class="feature-item mt-5 wow fadeInLeft" data-wow-delay="250ms">
+                                        <div class="icon"><i class="fas fa-newspaper"></i></div>
+                                        <div class="text">
+                                            <h4 class="bottom15">
+                                                <span class="d-inline-block">Haberler</span>
+                                            </h4>
+                                            <p>Bizden Haberler</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-6 col-md-4 col-sm-12 text-center">
+                                <div class="image feature-item d-inline-block wow fadeIn my-5 my-md-0"
+                                    data-wow-delay="400ms">
+                                    {{-- <img src="{{asset('assets')}}/image/01.jpg" alt="mobile phones"> --}}
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                                class="active"></li>
+
+                                            @foreach ($slider as $item)
+                                                <li data-target="#carouselExampleIndicators"
+                                                    data-slide-to="{{ $item->id }}"></li>
+                                            @endforeach
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100" src="{{ asset('assets') }}/image/01.jpg"
+                                                    alt="First slide">
+
+                                                <div class="carousel-caption d-none d-md-block">
+
+                                                </div>
+                                            </div>
+                                            @foreach ($slider as $item)
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100"
+                                                        src="{{ asset('storage') }}/image/{{ $item->image }}"
+                                                        alt="Second slide">
+
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5
+                                                            style="background-color: black; border-radius:50px; padding:10;">
+                                                            {{ $item->title }}
+                                                            {!! $item->description !!}</h5>
+
+                                                        <a href="{{ $item->description }}"> <button type="submit"
+                                                                class="btn yellow-blue-btn rounded-pill  w-100"
+                                                                id="submit_btn">Detay</button> </a>
+
+                                                    </div>
+                                                </div>
+                                            @endforeach
+
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                            data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Geri</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                            data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">İleri</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="text-center text-md-right">
+                                    <div class="feature-item mt-1 wow fadeInRight" data-wow-delay="200ms">
+                                        <a href="/duyurular">
+                                            <div class="icon"><i class="fas fa-book"></i></div>
+                                            <div class="text">
+                                                <h4 class="bottom15">
+                                                    <span class="d-inline-block">Duyurular</span>
+                                                </h4>
+                                                <p>Akıl Treni Koleji Duyurular</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feature-item mt-5 wow fadeInRight" data-wow-delay="250ms">
+                                    <a href="/iletisim">
+                                        <div class="icon"><i class="fas fa-address-book"></i></div>
+                                        <div class="text">
+                                            <h4 class="bottom15">
+                                                <span class="d-inline-block">İletişim</span>
+                                            </h4>
+                                            <p>Bizimle İletişime Geçşin</p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </section>
-
-
-
-                </ul>
             </div>
-
         </div>
+    </div>
+    </section>
 
-        <div class="svg-slider-bottom-holder">
-            <div class="svg-slider-bottom"></div>
-        </div>
 
-        <ul class="social-icons social-icons-simple revicon white d-none d-md-block d-lg-block">
-            <li class="d-table"><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a> </li>
-            <li class="d-table"><a href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-            <li class="d-table"><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i> </a> </li>
-            <li class="d-table"><a href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-        </ul>
+
+    </ul>
+    </div>
+
+    </div>
+
+    <div class="svg-slider-bottom-holder">
+        <div class="svg-slider-bottom"></div>
+    </div>
+
+    <ul class="social-icons social-icons-simple revicon white d-none d-md-block d-lg-block">
+        <li class="d-table"><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a> </li>
+        <li class="d-table"><a href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
+        <li class="d-table"><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i> </a> </li>
+        <li class="d-table"><a href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
+    </ul>
     </div>
     <!--Main SLIDER END -->
 
@@ -162,17 +176,17 @@
                 <div id="services-slider" class="owl-carousel">
 
                     @foreach ($whatdo as $wh)
-                       <div class="item">
+                        <div class="item">
                             <div class="service-box bg-{!! $wh->color !!}">
-                        <span class="bottom25">{!! $wh->icon !!} </span>
-                                <h4 class="bottom10 text-nowrap"><a  href="{{route('whatdo.detail' , [ $wh->slug ])}}"
+                                <span class="bottom25">{!! $wh->icon !!} </span>
+                                <h4 class="bottom10 text-nowrap"><a href="{{ route('whatdo.detail', [$wh->slug]) }}"
                                         class="font-10">{!! $wh->title !!} </a></h4>
                                 <p>{!! $wh->description = Str::limit($wh->description, 50) !!}</p>
-                                <a  href="{{route('whatdo.detail' , [ $wh->slug ])}}"
-                                    class="font-10">          <button class="btn btn-success" >Detay</button></a>
+                                <a href="{{ route('whatdo.detail', [$wh->slug]) }}" class="font-10"> <button
+                                        class="btn btn-success">Detay</button></a>
                             </div>
-                  
-                        </div> 
+
+                        </div>
                     @endforeach
 
                 </div>
@@ -238,6 +252,42 @@
                 <div class="svg-process-bottom-holder">
                     <div class="svg-process-bottom"></div>
                 </div>
+
+            </section>
+        @else
+            <section id="our-process" class="padding bg-red">
+                <div class="svg-process-top-holder">
+                    <div class="svg-process-top"></div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 text-center">
+                            <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
+                                <span>Bursluluk Sınavı Sınav Giriş Belgenizi Alın </span>
+                                <h2 class="font-normal">Bursluluk Sınavı Sınav Giriş Belgesi</h2>
+                                <div class="container">
+                                    <div class="row">
+                                        <nav class="navbar navbar-expand-lg mx-auto">
+
+                                            <a href="/basvurular"> <button type="submit"
+                                                    class="btn yellow-blue-btn rounded-pill  w-100"
+                                                    id="submit_btn">Sınav Giriş Belgesi</button> </a>
+                                        </nav>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <ul class="process-wrapp">
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="svg-process-bottom-holder">
+                            <div class="svg-process-bottom"></div>
+                        </div>
 
             </section>
         @endif

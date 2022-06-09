@@ -15,7 +15,7 @@
                             <div class="row gx-5 gy-3">
                                 <div class="col-12 col-lg-9">
 
-                                    <div>Eylem Çağras Admin Sayfası </div>
+                                    <div>Akıl Treni Koleji </div>
                                 </div>
                                 <!--//col-->
                                 <div class="col-12 col-lg-3">
@@ -40,70 +40,17 @@
                 <!--//app-card-->
 
                 <div class="row g-4 mb-4">
-                    <div class="col-6 col-lg-3">
-                        <div class="app-card app-card-stat shadow-sm h-100">
-                            <div class="app-card-body p-3 p-lg-4">
-                                <h4 class="stats-type mb-1">Yazılarım</h4>
-                                <div class="stats-figure">12</div>
-                                <div class="stats-meta text-success">
-                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
-                                    </svg> 20%
-                                </div>
-                            </div>
-                            <!--//app-card-body-->
-                            <a class="app-card-link-mask" href="#"></a>
-                        </div>
-                        <!--//app-card-->
-                    </div>
+                    
                     <!--//col-->
 
                     <div class="col-6 col-lg-3">
-                        <div class="app-card app-card-stat shadow-sm h-100">
-                            <div class="app-card-body p-3 p-lg-4">
-                                <h4 class="stats-type mb-1">ZİYARETÇİLER</h4>
-                                <div class="stats-figure">Ziyaretçi Sayısı</div>
-                                <div class="stats-meta text-success">
-                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down"
-                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-                                    </svg> 5%
-                                </div>
-                            </div>
-                            <!--//app-card-body-->
-                            <a class="app-card-link-mask" href="#"></a>
-                        </div>
+                        
                         <!--//app-card-->
                     </div>
                     <!--//col-->
-                    <div class="col-6 col-lg-3">
-                        <div class="app-card app-card-stat shadow-sm h-100">
-                            <div class="app-card-body p-3 p-lg-4">
-                                <h4 class="stats-type mb-1">BİLDİRİMLER</h4>
-                                <div class="stats-figure">3</div>
-
-                            </div>
-                            <!--//app-card-body-->
-                            <a class="app-card-link-mask" href="#"></a>
-                        </div>
-                        <!--//app-card-->
-                    </div>
+                    
                     <!--//col-->
-                    <div class="col-6 col-lg-3">
-                        <div class="app-card app-card-stat shadow-sm h-100">
-                            <div class="app-card-body p-3 p-lg-4">
-                                <h4 class="stats-type mb-1">Blog</h4>
-                                <div class="stats-figure">1</div>
-
-                            </div>
-                            <!--//app-card-body-->
-                            <a class="app-card-link-mask" href="#"></a>
-                        </div>
-                        <!--//app-card-->
-                    </div>
+                    
                     <!--//col-->
                 </div>
                 <!--//row-->
@@ -131,7 +78,7 @@
                                     </div>
                                     <!--//col-->
                                     <div class="col-auto">
-                                        <h4 class="app-card-title">Yazılar</h4>
+                                        <h4 class="app-card-title">Duyurular</h4>
                                     </div>
                                     <!--//col-->
                                 </div>
@@ -140,12 +87,11 @@
                             <!--//app-card-header-->
                             <div class="app-card-body px-4">
 
-                                <div class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Etiam aliquet eros vel diam semper mollis.</div>
+                                <div class="intro">Buradan Duyurulara Ulaşabilirsiniz</div>
                             </div>
                             <!--//app-card-body-->
                             <div class="app-card-footer p-4 mt-auto">
-                                <a class="btn app-btn-secondary" href="#">Yeni Yazı Oluştur</a>
+                                <a class="btn app-btn-secondary" href="{{route('admin.whatdo')}}">Yeni DUyuru Oluştur</a>
                             </div>
                             <!--//app-card-footer-->
                         </div>

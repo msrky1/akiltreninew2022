@@ -73,7 +73,7 @@ class BasvuruController extends Controller
         $posts = Approved::where('name' , $name)->first() ?? abort(403,'Kayboldun Sanırım');
         $data['approved'] = $posts;
         $pdf = PDF::loadView('pdf.user', $data);
-        return $pdf->stream('invoice.pdf');
+        return $pdf->stream('Başvuru Belgesi.pdf');
        
 
     }

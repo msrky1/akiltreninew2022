@@ -70,7 +70,11 @@
 /*Global Styling*/
 @import url('../../css2.css');
 /*@import url('../../css.css');*/
-body {
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bentham&family=Sorts+Mill+Goudy&family=Vollkorn+SC:wght@400;600;700;900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Bentham&family=Sorts+Mill+Goudy&family=Vollkorn+SC:wght@400;600;700;900&display=swap');body {
     font-size: 15px;
     color: #808080;
     font-weight: normal;
@@ -146,7 +150,7 @@ h4,
 h5,
 .button,
 .numbered .tp-bullet .tp-count {
-    font-family: 'Montserrat';
+    font-family: 'Arial' black;
 }
 
 h1 {
@@ -534,7 +538,7 @@ p {
 }
 
 .slider-middle-text{
-    font-family: 'Montserrat';
+    font-family: 'Arial' black;
     font-weight: bold;
 }
 
@@ -1508,7 +1512,7 @@ ul.links li a::before,
     line-height: normal;
     margin: 16px 1.75rem;
     display: inline-block;
-    font-family: 'Montserrat';
+    font-family: 'Arial' black;
     font-weight: bold;
 }
 
@@ -5929,7 +5933,7 @@ ul.latest_news li a:focus+span.defaultcolor {
     font-size: 50px;
     color: #606060;
     font-weight: 300;
-    font-family: 'Montserrat';
+    font-family: 'Arial' black;
 }
 
 .standalone-detail .para_text{
@@ -5947,7 +5951,7 @@ ul.latest_news li a:focus+span.defaultcolor {
 .standalone-area .gradient-text1{
     font-weight: 300;
     margin-bottom: 12px;
-    font-family: 'Montserrat';
+    font-family: 'Arial' black;
     font-size: 45px;
     color: #606060;
 }

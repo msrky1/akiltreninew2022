@@ -74,7 +74,7 @@ body {
     font-size: 15px;
     color: #808080;
     font-weight: normal;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arial' black;
     overflow-x: hidden;
     direction: ltr;
     line-height: 1.5;
@@ -146,7 +146,7 @@ h4,
 h5,
 .button,
 .numbered .tp-bullet .tp-count {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arial' black;
 }
 
 h1 {

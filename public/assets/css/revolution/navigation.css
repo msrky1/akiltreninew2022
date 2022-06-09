@@ -21,7 +21,7 @@ website:    http://www.themepunch.com
 .ares.tparrows:hover {
 }
 .ares.tparrows:before {
-  font-family: "revicons";
+  font-family: 'Arial' black;
   font-size:25px;
   color:#aaa;
   display:block;
@@ -179,7 +179,7 @@ border-radius:30px 0px 0px 30px;
   opacity:1;      
   padding:10px;
   box-sizing:border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Arial' black;
   border-bottom: 1px solid #e5e5e5;
  }
 .ares .tp-tab-image 
@@ -264,7 +264,7 @@ website:    http://www.themepunch.com
 	background:#000;
 }
 .custom.tparrows:before {
-	font-family: "revicons";
+	font-family: 'Arial' black;
 	font-size:15px;
 	color:#fff;
 	display:block;
@@ -519,7 +519,7 @@ website:    http://www.themepunch.com
 }
 
 .erinyen.tparrows:before {
-  font-family: "revicons";
+  font-family: 'Arial' black;
   font-size:20px;
   color:#fff;
   display:block;
@@ -696,7 +696,7 @@ opacity:1
 }
 
 .erinyen .tp-thumb-more:before {
-  font-family: "revicons";
+  font-family: 'Arial' black;
   font-size:12px;
   color:#aaa;
   color:rgba(255,255,255,0.75);
@@ -920,7 +920,7 @@ website:    http://www.themepunch.com
   opacity:1;      
   padding:10px;
   box-sizing:border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Arial' black;
   border-bottom: 1px solid rgba(255,255,255,0.15);
  }
 .gyges .tp-tab-image 
@@ -1003,7 +1003,7 @@ website:    http://www.themepunch.com
 }
 
 .hades.tparrows:before {
-	font-family: "revicons";
+	font-family: 'Arial' black;
 	font-size:30px;
 	color:#fff;
 	display:block;
@@ -1259,7 +1259,7 @@ website:    http://www.themepunch.com
 .hebe.tparrows:hover {
 }
 .hebe.tparrows:before {
-  font-family: "revicons";
+  font-family: 'Arial' black;
   font-size:30px;
   color:#aaa;
   display:block;
@@ -1458,7 +1458,7 @@ website:    http://www.themepunch.com
 	background:#000;
 }
 .hephaistos.tparrows:before {
-	font-family: "revicons";
+	font-family: 'Arial' black;
 	font-size:18px;
 	color:#fff;
 	display:block;
@@ -1536,7 +1536,7 @@ website:    http://www.themepunch.com
 }
 
 .hermes.tparrows:before {
-	font-family: "revicons";
+	font-family: 'Arial' black;
 	font-size:15px;
 	color:#fff;
 	display:block;
@@ -1762,7 +1762,7 @@ website:    http://www.themepunch.com
 	background:#000;
 }
 .hesperiden.tparrows:before {
-	font-family: "revicons";
+	font-family: 'Arial' black;
 	font-size:20px;
 	color:#fff;
 	display:block;
@@ -1863,7 +1863,7 @@ website:    http://www.themepunch.com
   opacity:1;      
   padding:10px;
   box-sizing:border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Arial' black;
   border-bottom: 1px solid #e5e5e5;
  }
 .hesperiden .tp-tab-image 
@@ -2155,7 +2155,7 @@ website:    http://www.themepunch.com
 	background:#333;
 }
 .persephone.tparrows:before {
-	font-family: "revicons";
+	font-family: 'Arial' black;
 	font-size:15px;
 	color:#fff;
 	display:block;
@@ -2299,7 +2299,7 @@ website:    http://www.themepunch.com
 }
 
 .zeus.tparrows:before {
-  font-family: "revicons";
+  font-family: 'Arial' black;
   font-size:20px;
   color:#fff;
   display:block;
@@ -2476,7 +2476,7 @@ opacity:1
 }
 
 .zeus .tp-thumb-more:before {
-  font-family: "revicons";
+  font-family: 'Arial' black;
   font-size:12px;
   color:#aaa;
   color:rgba(255,255,255,0.75);
@@ -2586,7 +2586,7 @@ opacity:1
 }
 
 .post-tabs .tp-thumb-more:before {
-  font-family: "revicons";
+  font-family: 'Arial' black;
   font-size:12px;
   color:#aaa;
   color:rgba(255,255,255,0.75);
